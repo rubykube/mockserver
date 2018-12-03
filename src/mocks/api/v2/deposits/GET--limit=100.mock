@@ -1,0 +1,18 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+
+[
+  {
+    "id":186,
+    "currency":"btc",
+    "amount":"0.21026373",
+    "fee":"0.0",
+    "txid":"65aaabc660e03cb04dd4f2368819988b295394eb7626d14dd92f5f30fc77eaa0",
+    "created_at":"2018-09-21T12:48:21+02:00",
+    "confirmations":1,
+    "completed_at":"2018-09-21T12:57:46+02:00",
+    "state":"accepted"
+  }
+]
