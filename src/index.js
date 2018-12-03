@@ -1,4 +1,12 @@
 var http = require('http');
 var mockserver = require('mockserver');
- 
-http.createServer(mockserver('src/mocks')).listen(9001);
+const port = 9001;
+
+http.createServer(mockserver('src/mocks')).listen(port, (error) => {
+  if (error) {
+    console.log("Unhandled exception", error);
+    return;
+  }
+
+  console.log(`Server is listening on port ${port}`);
+})
