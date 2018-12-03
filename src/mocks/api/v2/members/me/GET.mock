@@ -1,0 +1,34 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+
+{
+  "sn":"SNCE464361D3",
+  "email":"admin@peatio.tech",
+  "accounts":[
+    {
+      "currency":"bch",
+      "balance":"10.12",
+      "locked":"0.1"
+    },
+    {
+      "currency":"btc",
+      "balance":"0.21026373",
+      "locked":"0.0"
+    },
+    {
+      "currency":"eth",
+      "balance":"5.0",
+      "locked":"0.0"
+    },
+    {
+      "currency":"ltc",
+      "balance":"6.0",
+      "locked":"0.0"
+    },
+    {
+      "currency":"xrp",
+      "balance":"1234.0",
+      "locked":"0.0"
+    }
+  ]
+}
