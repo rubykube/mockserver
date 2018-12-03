@@ -1,0 +1,6 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+
+{"currency":"eth","address":"0x00eec1e95026faf0412d7a29b94d514d31446141"}

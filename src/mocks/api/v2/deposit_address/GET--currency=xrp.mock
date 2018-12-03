@@ -1,0 +1,6 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+
+{"currency":"xrp","address":"r4JEqX6izuUH5WsHw5VrLCGo7wF4SkPGTt?dt=10"}
