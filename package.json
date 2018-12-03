@@ -1,0 +1,11 @@
+{
+  "name": "opex-mockserver",
+  "version": "1.0.0",
+  "description": "OPEX Mock Server",
+  "main": "index.js",
+  "author": "OpenWare SAS",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mockserver": "^2.2.0"
+  }
+}
