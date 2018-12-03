@@ -1,0 +1,4 @@
+HTTP/2 400 
+content-type: application/json
+
+{"error":"Email is missing, Password is missing, Application ID is missing"}
