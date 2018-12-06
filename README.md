@@ -6,12 +6,17 @@
 
 ## Run the frontend server
 
-Run the frontend application on http://localhost:4200
+ * Use the following application ID: 923937b3467b9ea668a5e9fdd573cc338a1ae529a46feb12a509b4eccf3f057b
+ * Run the frontend application on http://localhost:4200
 
 ## Session
 
-Use the following credentials to simulate a sucess login:
+Use any user and password to login.
 
-|      username     | password |
-|:-----------------:|:--------:|
-| admin@peatio.tech |  123123  |
+Use the following credentials to simulate specific user level:
+
+|      username     | password | level |
+|:-----------------:|:--------:|:-----:|
+|     1@peatio.tech |  123123  |   1   |
+|     2@peatio.tech |  123123  |   2   |
+|         *         |     *    |   3   |
