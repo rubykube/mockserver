@@ -4,4 +4,29 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
 
-[{"id":"ethzar","name":"ETH/ZAR"},{"id":"btczar","name":"BTC/ZAR"},{"id":"bchzar","name":"BCH/ZAR"},{"id":"bchbtc","name":"BCH/BTC"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"xrpbtc","name":"XRP/BTC"},{"id":"ltcbtc","name":"LTC/BTC"}]
+[
+  {
+    "id": "btczar",
+    "name": "BTC/ZAR"
+  },
+  {
+    "id": "bchbtc",
+    "name": "BCH/ZAR"
+  },
+  {
+    "id": "ethbtc",
+    "name": "ETH/ZAR"
+  },
+  {
+    "id": "dashbtc",
+    "name": "DASH/BTC"
+  },
+  {
+    "id": "ltcbtc",
+    "name": "LTC/BTC"
+  },
+  {
+    "id": "xrpbtc",
+    "name": "XRP/BTC"
+  },
+]
