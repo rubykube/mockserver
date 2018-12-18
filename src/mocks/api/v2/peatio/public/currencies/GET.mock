@@ -1,0 +1,99 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+
+[
+  {
+    "id": "bch",
+    "symbol": "฿",
+    "type": "coin",
+    "wallet_url_template": "https://www.blocktrail.com/tBCC/address/#{address}",
+    "transaction_url_template": "https://www.blocktrail.com/tBCC/tx/#{txid}",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.001",
+    "quick_withdraw_limit": "0.1",
+    "deposit_confirmations": 1,
+    "base_factor": 100000000,
+    "precision": 4
+  },
+  {
+    "id": "btc",
+    "symbol": "฿",
+    "type": "coin",
+    "wallet_url_template": "https://testnet.blockchain.info/address/#{address}",
+    "transaction_url_template": "https://testnet.blockchain.info/tx/#{txid}",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.0005",
+    "quick_withdraw_limit": "100.0",
+    "deposit_confirmations": 1,
+    "base_factor": 100000000,
+    "precision": 8
+  }
+  ,
+  {
+    "id": "dash",
+    "symbol": "Đ",
+    "type": "coin",
+    "wallet_url_template": "https://live.blockcypher.com/dash/address/#{address}",
+    "transaction_url_template": "https://live.blockcypher.com/dash/tx/#{txid}",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.001",
+    "quick_withdraw_limit": "0.1",
+    "deposit_confirmations": 1,
+    "base_factor": 100000000,
+    "precision": 8
+  }
+  ,
+  {
+    "id": "eth",
+    "symbol": "Ξ",
+    "type": "coin",
+    "wallet_url_template": "https://rinkeby.etherscan.io/address/#{address}",
+    "transaction_url_template": "https://rinkeby.etherscan.io/tx/#{txid}",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.01",
+    "quick_withdraw_limit": "500.0",
+    "deposit_confirmations": 1,
+    "base_factor": 1000000000000000000,
+    "precision": 8
+  },
+  {
+    "id": "ltc",
+    "symbol": "Ł",
+    "type": "coin",
+    "wallet_url_template": "https://chain.so/address/LTCTEST/#{address}",
+    "transaction_url_template": "https://chain.so/tx/LTCTEST/#{txid}",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.001",
+    "quick_withdraw_limit": "1000.0",
+    "deposit_confirmations": 1,
+    "base_factor": 100000000,
+    "precision": 8
+  }
+  ,
+  {
+    "id": "xrp",
+    "symbol": "ꭆ",
+    "type": "coin",
+    "wallet_url_template": "https://bithomp.com/explorer/",
+    "transaction_url_template": "https://bithomp.com/explorer/",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.25",
+    "quick_withdraw_limit": "100000.0",
+    "deposit_confirmations": 1,
+    "base_factor": 1000000,
+    "precision": 8
+  },
+  {
+    "id": "zar",
+    "symbol": "$",
+    "type": "fiat",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.0",
+    "quick_withdraw_limit": "1000.0",
+    "base_factor": 1,
+    "precision": 8
+  }
+]
