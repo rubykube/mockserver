@@ -1,32 +1,8 @@
-accept: application/json
- accept-encoding: gzip, deflate, br
- accept-language: en-US,en;q=0.9
- cache-control: no-cache
- content-length: 2
- content-type: application/json; charset=utf-8
- date: Fri, 14 Dec 2018 13:30:21 GMT
- etag: W/"d751713988987e9331980363e24189ce"
- expires: -1
- server: envoy
- status: 200, 200 OK
- version: HTTP/1.1
- via: 2.0 a350f357b825293e306b1b0a2cb490c1.cloudfront.net (CloudFront), 1.1 a350f357b825293e306b1b0a2cb490c1.cloudfront.net (CloudFront)
- x-amz-cf-id: PgrQBAEsRz3YCIrGKe6LwqHgBd9ha5oSs4HLu253xJ6QXpQg5WbwFQ==
- x-amzn-trace-id: Root=1-5c13b06c-7abc598076f53c0c164099c8
- x-cache: Miss from cloudfront
- x-envoy-expected-rq-timeout-ms: 3000
- x-envoy-original-path: /api/v2/peatio/public/markets/bchbtc/trades?limit=50&order_by=desc
- x-envoy-upstream-service-time: 24
- x-forwarded-for: 195.214.197.210, 35.158.136.157, 10.101.10.59, 52.70.1.52
- x-forwarded-host: www.microkube.com
- x-forwarded-port: 443
- x-forwarded-proto: https
- x-forwarded-server: a5ebfcc5b4bf
- x-powered-by: Express, Phusion Passenger 5.3.4
- x-real-ip: 52.70.1.52
- x-request-id: bda1231c-b825-4c43-a952-0c4cd436c883
- x-runtime: 0.017573
- x-swaggerhub-cookie:
+HTTP/2 200 
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+access-control-allow-credentials: true
 
  [
     {
