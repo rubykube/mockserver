@@ -1,0 +1,272 @@
+accept: application/json
+ accept-encoding: gzip, deflate, br
+ accept-language: en-US,en;q=0.9
+ cache-control: no-cache
+ content-length: 2
+ content-type: application/json; charset=utf-8
+ date: Fri, 14 Dec 2018 13:27:35 GMT
+ etag: W/"d751713988987e9331980363e24189ce"
+ expires: -1
+ server: envoy
+ status: 200, 200 OK
+ version: HTTP/1.1
+ via: 2.0 a350f357b825293e306b1b0a2cb490c1.cloudfront.net (CloudFront), 1.1 a350f357b825293e306b1b0a2cb490c1.cloudfront.net (CloudFront)
+ x-amz-cf-id: QbWLYmTNRMr2p7prZE23kTGv7zBTpfAPNEx2Y8EwAra9xjjdY6__4A==
+ x-amzn-trace-id: Root=1-5c13afc7-7ae9ef822c1ee8d43f63f71c
+ x-cache: Miss from cloudfront
+ x-envoy-expected-rq-timeout-ms: 3000
+ x-envoy-original-path: /api/v2/peatio/public/markets/bchbtc/k-line?period=1&limit=30
+ x-envoy-upstream-service-time: 19
+ x-forwarded-for: 195.214.197.210, 52.57.254.37, 10.101.20.153, 18.233.186.140
+ x-forwarded-host: www.microkube.com
+ x-forwarded-port: 443
+ x-forwarded-proto: https
+ x-forwarded-server: a5ebfcc5b4bf
+ x-powered-by: Express, Phusion Passenger 5.3.4
+ x-real-ip: 18.233.186.140
+ x-request-id: 1de50b7d-885a-43ba-912b-ce7d5eb092dd
+ x-runtime: 0.016307
+ x-swaggerhub-cookie:
+
+[
+    [
+        1544792220,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792280,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792340,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792400,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792460,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792520,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792580,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792640,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792700,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792760,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792820,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792880,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544792940,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793000,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793060,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793120,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793180,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793240,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793300,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793360,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793420,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793480,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793540,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793600,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793660,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793720,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793780,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793840,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793900,
+        15,
+        15,
+        15,
+        15,
+        0
+    ],
+    [
+        1544793960,
+        15,
+        15,
+        15,
+        15,
+        0
+    ]
+]
