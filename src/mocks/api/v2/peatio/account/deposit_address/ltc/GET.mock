@@ -1,0 +1,8 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+access-control-allow-credentials: true
+
+{"currency":"bch","address":"65e8800b5c6800aad896f888b2a62afc"}

@@ -1,0 +1,18 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+access-control-allow-credentials: true
+
+{
+  "id": 1,
+  "uid": "ID504BC7BA8F",
+  "email": "admin@barong.io",
+  "role": "admin",
+  "level": 3,
+  "otp": false,
+  "state": "active",
+  "created_at": "2018-12-08T18:03:34.000Z",
+  "updated_at": "2018-12-08T18:03:39.000Z"
+}

@@ -1,0 +1,40 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+access-control-allow-credentials: true
+
+[
+   {
+      "id":4,
+      "currency":"btc",
+      "amount":"111.0",
+      "fee":"0.0",
+      "txid":"test",
+      "created_at":"2018-12-17T12:37:56+01:00",
+      "confirmations":0,
+      "completed_at":null,
+      "state":"submitted"
+   },
+   {
+      "id":3,
+      "currency":"usd",
+      "amount":"520.0",
+      "fee":"0.0",
+      "txid":"1",
+      "created_at":"2018-12-19T12:37:56+01:00",
+      "completed_at":null,
+      "state":"submitted"
+   },
+   {
+      "id":2,
+      "currency":"usd",
+      "amount":"2294.0",
+      "fee":"0.0",
+      "txid":null,
+      "created_at":"2018-12-19T12:37:56+01:00",
+      "completed_at":null,
+      "state":"submitted"
+   }
+]

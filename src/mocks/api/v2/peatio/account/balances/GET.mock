@@ -1,0 +1,49 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+access-control-allow-credentials: true
+
+[
+  {
+    "currency": "bch",
+    "balance": "1.0534",
+    "locked": "0.0254"
+  },
+  {
+    "currency": "btc",
+    "balance": "2.0535",
+    "locked": "0.042"
+  },
+  {
+    "currency": "dash",
+    "balance": "4.0245",
+    "locked": "0.05324"
+  },
+  {
+    "currency": "eth",
+    "balance": "0.0422",
+    "locked": "0.0524"
+  },
+  {
+    "currency": "ltc",
+    "balance": "0.10",
+    "locked": "0.4250"
+  },
+  {
+    "currency": "trst",
+    "balance": "0.3560",
+    "locked": "0.250"
+  },
+  {
+    "currency": "usd",
+    "balance": "0.0",
+    "locked": "0.0"
+  },
+  {
+    "currency": "xrp",
+    "balance": "0.0",
+    "locked": "0.0"
+  }
+]
