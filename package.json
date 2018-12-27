@@ -6,6 +6,7 @@
   "author": "OpenWare SAS",
   "license": "UNLICENSED",
   "dependencies": {
-    "mockserver": "^2.2.0"
+    "mockserver": "^2.2.0",
+    "ws": "^6.1.2"
   }
 }
