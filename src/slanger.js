@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const WebSocket = require('ws');
 
 const tickersMock = (ws, channel, markets) => () => {

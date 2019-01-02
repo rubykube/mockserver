@@ -1,10 +1,13 @@
 {
-  "name": "opex-mockserver",
+  "name": "peatio-mockserver",
   "version": "1.0.0",
-  "description": "OPEX Mock Server",
+  "description": "Peatio Mock Server",
   "main": "index.js",
   "author": "OpenWare SAS",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "bin": {
+    "peatio-mockserver": "./src/index.js"
+  },
   "dependencies": {
     "mockserver": "^2.2.0",
     "ws": "^6.1.2"

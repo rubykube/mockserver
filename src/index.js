@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const http = require('http');
 const mockserver = require('mockserver');
 const SlangerMock = require('./slanger');
