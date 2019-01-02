@@ -1,43 +1,12 @@
 const WebSocket = require('ws');
+const Helpers = require('./helpers')
 
 const tickersMock = (ws, channel, markets) => () => {
-  var tickers = {}
-  markets.forEach(name => {
-    var pairs = name.split("/");
-    var base_unit = pairs[0].toLowerCase();
-    var quote_unit = pairs[1].toLowerCase();
-    var marketId = `${base_unit}${quote_unit}`
-    tickers[marketId] = {
-      "name": name,
-      "base_unit": base_unit,
-      "quote_unit": quote_unit,
-      "low": "0.001",
-      "high": "0.145",
-      "last": "0.134",
-      "open": 0.134,
-      "volume": "0.0",
-      "sell": "0.0",
-      "buy": "0.0",
-      "at": Date.now()
-    }
-  });
-  ws.send(JSON.stringify({"event": "tickers","data": tickers,"channel": channel}));
+  ws.send(JSON.stringify({"event": "tickers","data": Helpers.getTickers(markets),"channel": channel}));
 };
 
 const orderBookUpdateMock = (ws, channel) => () => {
-  var data = {
-    "asks": [
-      ["0.0005", "97.4"],
-      ["2.0", "0.8569"],
-      ["2.5", "1.0"],
-      ["3.0", "1.0"]
-    ],
-    "bids": [
-      ["0.0001", "10.0"],
-      ["0.0000008", "8.9"]
-    ]
-  }
-  ws.send(JSON.stringify({"event": "update","data": data,"channel": channel}))
+  ws.send(JSON.stringify({"event": "update","data": Helpers.getOrderBook(),"channel": channel}))
 };
 
 var tradeId = 100000;
@@ -67,18 +36,19 @@ const tradesMock = (ws, channel) => {
 };
 
 class SlangerMock {
-  constructor(wsPort, markets) {
-    const wss = new WebSocket.Server({ port: wsPort });
-    console.log(`WebSocket listening on ${wsPort}`.green);
+  constructor(port, markets) {
+    const wss = new WebSocket.Server({ port: port });
+    const url = `ws://0.0.0.0:${port}`.green
+    console.log(`Slanger: listening on ${url}`);
 
     wss.on('connection', function connection(ws) {
-      console.log("New connection on websocket");
+      console.log("Slanger: connection accepted");
       ws.timers = {};
       ws.on('message', function incoming(message) {
         if(message.length === 0)
           return;
         try {
-          console.log('received: %s', message);
+          console.log('Slanger: received: %s', message);
           var payload = JSON.parse(message);
           var channel = payload["data"]["channel"];
           var timers = [];
@@ -111,14 +81,14 @@ class SlangerMock {
             ws.timers[channel].push(timer);
           });
         } catch (err) {
-          console.log(`Something went wrong: ${err}`);
+          console.log(`Slanger: Something went wrong: ${err}`);
         }
       });
 
       ws.send(JSON.stringify({"event":"pusher:connection_established","data":{"socket_id":"5.612235","activity_timeout":120}}));
 
       ws.on('close', () => {
-        console.log('websocket disconnection');
+        console.log('Slanger: connection closed');
         if(ws.timers) {
           for(var channel in ws.timers) {
             ws.timers[channel].forEach((t) => {
