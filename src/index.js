@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 const { spawn } = require('child_process');
 const SlangerMock = require('./slanger');
-const Mock = require('./mock');
-const argv = require('yargs').argv;
+const RangerMock = require('./ranger');
 const colors = require('colors');
+
+const argv = require('yargs').argv;
 const apiV1Port = argv.portV1 || 9001;
 const apiV2Port = argv.portV2 || 9002;
-const wsPort = argv.wsPort || 9010;
+const slangerPort = argv.slangerPort || 9010;
+const rangerPort = argv.slangerPort || 9011;
 const help = argv.h || argv.help;
-const verbose = true;
 
 const markets = [
   "ETH/ZAR",
@@ -35,14 +36,18 @@ if (help) {
     "  index.js [ARGS]",
     "",
     "Options:",
-    "  -p, --port=PORT  - Port for the http server to listen on",
-    "  --ws-port=PORT   - Port for the websocket to listen on",
+    "  --api-v1-port=PORT   - Port for the v1 API mockserver to listen on",
+    "  --api-v2-port=PORT   - Port for the v2 API mockserver to listen on",
+    "  --slanger-port=PORT  - Port for Slanger mock to listen on",
+    "  --ranger-port=PORT   - Port for Ranger mock to listen on",
   ].join("\n"));
 } else {
   const mockV1 = startMock(apiV1Port, "v1")
   const mockV2 = startMock(apiV2Port, "v2")
+
   try {
-    new SlangerMock(wsPort, markets);
+    new SlangerMock(slangerPort, markets);
+    new RangerMock(rangerPort, markets);
   } catch (error) {
     mockV1.kill();
     mockV2.kill();
