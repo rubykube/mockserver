@@ -1,0 +1,18 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+
+{
+  "id": "eth",
+  "symbol": "Ξ",
+  "type": "coin",
+  "wallet_url_template": "https://rinkeby.etherscan.io/address/#{address}",
+  "transaction_url_template": "https://rinkeby.etherscan.io/tx/#{txid}",
+  "deposit_fee": "0.0",
+  "withdraw_fee": "0.01",
+  "quick_withdraw_limit": "500.0",
+  "deposit_confirmations": 1,
+  "base_factor": 1000000000000000000,
+  "precision": 8
+}

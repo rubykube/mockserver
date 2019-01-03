@@ -1,10 +1,12 @@
 #!/usr/bin/env node
+const { spawn } = require('child_process');
 const SlangerMock = require('./slanger');
 const Mock = require('./mock');
 const argv = require('yargs').argv;
 const colors = require('colors');
-const apiv1Port = argv.p || argv.port || 9001;
-const wsPort = argv.wsPort || 9002;
+const apiV1Port = argv.portV1 || 9001;
+const apiV2Port = argv.portV2 || 9002;
+const wsPort = argv.wsPort || 9010;
 const help = argv.h || argv.help;
 const verbose = true;
 
@@ -18,6 +20,15 @@ const markets = [
   "LTC/BTC"
 ]
 
+const startMock = (port, version) => {
+  const log = (message) => console.log(`Mock ${version}: ${message}`.trim());
+  const mock = spawn("./src/mock.js", ["--port", port, "--dir", `src/mocks-${version}`]);
+  mock.stdout.on('data', log);
+  mock.stderr.on('data', log);
+  mock.on('close', (code) => log(`process exited with code ${code}`.red));
+  return mock;
+}
+
 if (help) {
   console.log([
     "Usage:",
@@ -28,6 +39,13 @@ if (help) {
     "  --ws-port=PORT   - Port for the websocket to listen on",
   ].join("\n"));
 } else {
-  new Mock("v1", apiv1Port);
-  new SlangerMock(wsPort, markets);
+  const mockV1 = startMock(apiV1Port, "v1")
+  const mockV2 = startMock(apiV2Port, "v2")
+  try {
+    new SlangerMock(wsPort, markets);
+  } catch (error) {
+    mockV1.kill();
+    mockV2.kill();
+    throw(error);
+  }
 }

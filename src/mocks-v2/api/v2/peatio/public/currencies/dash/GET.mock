@@ -1,0 +1,18 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+
+{
+  "id": "dash",
+  "symbol": "Đ",
+  "type": "coin",
+  "wallet_url_template": "https://live.blockcypher.com/dash/address/#{address}",
+  "transaction_url_template": "https://live.blockcypher.com/dash/tx/#{txid}",
+  "deposit_fee": "0.0",
+  "withdraw_fee": "0.001",
+  "quick_withdraw_limit": "0.1",
+  "deposit_confirmations": 1,
+  "base_factor": 100000000,
+  "precision": 8
+}

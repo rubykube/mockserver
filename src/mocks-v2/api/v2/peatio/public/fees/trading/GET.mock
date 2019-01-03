@@ -1,0 +1,7 @@
+HTTP/2 200 
+content-type: application/json
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+
+[{"market":"bchbtc","ask_fee":{"type":"relative","value":"0.0001"},"bid_fee":{"type":"relative","value":"0.0001"}},{"market":"ethbtc","ask_fee":{"type":"relative","value":"0.0001"},"bid_fee":{"type":"relative","value":"0.0001"}},{"market":"xrpbtc","ask_fee":{"type":"relative","value":"0.0001"},"bid_fee":{"type":"relative","value":"0.0001"}},{"market":"ltcbtc","ask_fee":{"type":"relative","value":"0.0001"},"bid_fee":{"type":"relative","value":"0.0001"}}]

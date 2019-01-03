@@ -1,9 +1,14 @@
+#!/usr/bin/env node
 const http = require('http');
 const mockserver = require('mockserver');
 
+const argv = require('yargs').argv;
+const port = argv.port;
+const directory = argv.dir;
+
 class Mock {
-    constructor (version, port, verbose = true) {
-        http.createServer(mockserver(`src/mocks-${version}`, verbose)).listen(port, (error) => {
+    constructor(directory, port, verbose = true) {
+        http.createServer(mockserver(directory, verbose)).listen(port, (error) => {
             if (error) {
                 console.log(`Mock server ${version} unhandled exception`, error);
                 return;
@@ -11,10 +16,10 @@ class Mock {
 
             if (verbose) {
                 const url = `http://0.0.0.0:${port}`.green
-                console.log(`Mockserver ${version} serving mocks: ${url}`);
+                console.log(`Mockserver serving ${directory} on: ${url}`);
             }
         })
     }
 }
 
-module.exports = Mock;
+new Mock(directory, port, true)
