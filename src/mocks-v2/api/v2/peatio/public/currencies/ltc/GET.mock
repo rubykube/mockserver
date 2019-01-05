@@ -5,14 +5,15 @@ access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
   "id": "ltc",
+  "name": "Litecoin",
   "symbol": "Ł",
+  "explorer_transaction": "https://chain.so/tx/LTCTEST/#{txid}",
+  "explorer_address": "https://chain.so/address/LTCTEST/#{address}",
   "type": "coin",
-  "wallet_url_template": "https://chain.so/address/LTCTEST/#{address}",
-  "transaction_url_template": "https://chain.so/tx/LTCTEST/#{txid}",
   "deposit_fee": "0.0",
-  "withdraw_fee": "0.001",
-  "quick_withdraw_limit": "1000.0",
-  "deposit_confirmations": 1,
+  "withdraw_fee": "0.0",
+  "withdraw_limit_24h": "0.5000000000000001",
+  "withdraw_limit_72h": "1.2",
   "base_factor": 100000000,
   "precision": 8
 }

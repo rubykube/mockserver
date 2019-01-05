@@ -5,14 +5,15 @@ access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
   "id": "dash",
+  "name": "Dash",
   "symbol": "Đ",
+  "explorer_transaction": "https://test.insight.dash.siampm.com/dash/tx/#{txid}",
+  "explorer_address": "https://test.insight.dash.siampm.com/dash/address/#{address}",
   "type": "coin",
-  "wallet_url_template": "https://live.blockcypher.com/dash/address/#{address}",
-  "transaction_url_template": "https://live.blockcypher.com/dash/tx/#{txid}",
   "deposit_fee": "0.0",
-  "withdraw_fee": "0.001",
-  "quick_withdraw_limit": "0.1",
-  "deposit_confirmations": 1,
+  "withdraw_fee": "0.0",
+  "withdraw_limit_24h": "0.2",
+  "withdraw_limit_72h": "0.5000000000000001",
   "base_factor": 100000000,
   "precision": 8
 }
