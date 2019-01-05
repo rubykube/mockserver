@@ -5,14 +5,15 @@ access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
   "id": "xrp",
+  "name": "Ripple",
   "symbol": "ꭆ",
+  "explorer_transaction": "https://bithomp.com/explorer/#{txid}",
+  "explorer_address": "https://bithomp.com/explorer/#{address}",
   "type": "coin",
-  "wallet_url_template": "https://bithomp.com/explorer/",
-  "transaction_url_template": "https://bithomp.com/explorer/",
   "deposit_fee": "0.0",
-  "withdraw_fee": "0.25",
-  "quick_withdraw_limit": "100000.0",
-  "deposit_confirmations": 1,
+  "withdraw_fee": "0.0",
+  "withdraw_limit_24h": "100.0",
+  "withdraw_limit_72h": "200.0",
   "base_factor": 1000000,
   "precision": 8
 }

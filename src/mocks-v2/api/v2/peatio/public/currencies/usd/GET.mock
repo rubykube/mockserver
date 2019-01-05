@@ -5,11 +5,13 @@ access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
   "id": "usd",
+  "name": "US Dollar",
   "symbol": "$",
   "type": "fiat",
   "deposit_fee": "0.0",
   "withdraw_fee": "0.0",
-  "quick_withdraw_limit": "1000.0",
+  "withdraw_limit_24h": "100.0",
+  "withdraw_limit_72h": "200.0",
   "base_factor": 1,
-  "precision": 8
+  "precision": 2
 }

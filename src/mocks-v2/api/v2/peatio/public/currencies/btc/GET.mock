@@ -5,14 +5,15 @@ access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
   "id": "btc",
+  "name": "Bitcoin",
   "symbol": "฿",
+  "explorer_transaction": "https://testnet.blockchain.info/tx/#{txid}",
+  "explorer_address": "https://testnet.blockchain.info/address/#{address}",
   "type": "coin",
-  "wallet_url_template": "https://testnet.blockchain.info/address/#{address}",
-  "transaction_url_template": "https://testnet.blockchain.info/tx/#{txid}",
   "deposit_fee": "0.0",
-  "withdraw_fee": "0.0005",
-  "quick_withdraw_limit": "100.0",
-  "deposit_confirmations": 1,
+  "withdraw_fee": "0.0",
+  "withdraw_limit_24h": "0.1",
+  "withdraw_limit_72h": "0.2",
   "base_factor": 100000000,
   "precision": 8
 }
