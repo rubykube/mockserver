@@ -22,6 +22,6 @@ Use the following credentials to simulate specific user level:
 |         *         |     *    |   3   |
 
 
-For receiving 401 in user login use:
+For response 401 when login - use next credentials:
 username: 2@peatio.tech 
 password: eyJpc3MiOiJiYXJvbmciLCJqdGkiO12fdsdf123
