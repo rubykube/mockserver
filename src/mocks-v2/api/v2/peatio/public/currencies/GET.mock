@@ -114,5 +114,27 @@ access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Au
     "withdraw_limit_72h": "200.0",
     "base_factor": 1000000,
     "precision": 8
+  },
+  {
+    "id": "eur",
+    "symbol": "€",
+    "type": "fiat",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.02",
+    "withdraw_limit_24h": "2000.0",
+    "withdraw_limit_72h": "1000000.0",
+    "base_factor": 1,
+    "precision": 8
+  },
+  {
+    "id": "usd",
+    "symbol": "$",
+    "type": "fiat",
+    "deposit_fee": "0.0",
+    "withdraw_fee": "0.05",
+    "withdraw_limit_24h": "2000.0",
+    "withdraw_limit_72h": "100000.0",
+    "base_factor": 1,
+    "precision": 8
   }
 ]

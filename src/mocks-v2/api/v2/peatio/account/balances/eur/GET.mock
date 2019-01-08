@@ -6,7 +6,7 @@ access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Au
 access-control-allow-credentials: true
 
 {
-  "currency":"zar",
+  "currency":"eur",
   "balance":"1000.0",
   "locked":"0.0"
 }
