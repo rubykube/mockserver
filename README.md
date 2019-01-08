@@ -20,3 +20,8 @@ Use the following credentials to simulate specific user level:
 |     1@peatio.tech |  123123  |   1   |
 |     2@peatio.tech |  123123  |   2   |
 |         *         |     *    |   3   |
+
+
+For receiving 401 in user login use:
+username: 2@peatio.tech 
+password: eyJpc3MiOiJiYXJvbmciLCJqdGkiO12fdsdf123
