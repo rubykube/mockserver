@@ -5,14 +5,15 @@ access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
   "id": "eth",
+  "name": "Ethereum",
   "symbol": "Ξ",
+  "explorer_transaction": "https://rinkeby.etherscan.io/tx/#{txid}",
+  "explorer_address": "https://rinkeby.etherscan.io/address/#{address}",
   "type": "coin",
-  "wallet_url_template": "https://rinkeby.etherscan.io/address/#{address}",
-  "transaction_url_template": "https://rinkeby.etherscan.io/tx/#{txid}",
   "deposit_fee": "0.0",
-  "withdraw_fee": "0.01",
-  "quick_withdraw_limit": "500.0",
-  "deposit_confirmations": 1,
-  "base_factor": 1000000000000000000,
+  "withdraw_fee": "0.0",
+  "withdraw_limit_24h": "0.2",
+  "withdraw_limit_72h": "0.5000000000000001",
+  "base_factor": 1e+18,
   "precision": 8
 }

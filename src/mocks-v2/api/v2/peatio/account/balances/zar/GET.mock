@@ -7,6 +7,6 @@ access-control-allow-credentials: true
 
 {
   "currency":"zar",
-  "balance":"1234.0",
+  "balance":"1000.0",
   "locked":"0.0"
 }

@@ -59,5 +59,21 @@ access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Au
       "type": "fixed",
       "value": "0.0"
     }
+  },
+  {
+    "currency": "eur",
+    "type": "fiat",
+    "fee": {
+      "type": "fixed",
+      "value": "0.0"
+    }
+  },
+  {
+    "currency": "usd",
+    "type": "fiat",
+    "fee": {
+      "type": "fixed",
+      "value": "0.0"
+    }
   }
 ]

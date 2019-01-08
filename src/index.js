@@ -44,13 +44,12 @@ if (help) {
 } else {
   const mockV1 = startMock(apiV1Port, "v1")
   const mockV2 = startMock(apiV2Port, "v2")
+  new SlangerMock(slangerPort, markets);
+  new RangerMock(rangerPort, markets);
 
-  try {
-    new SlangerMock(slangerPort, markets);
-    new RangerMock(rangerPort, markets);
-  } catch (error) {
-    mockV1.kill();
-    mockV2.kill();
-    throw(error);
+  function exitHandler(options, exitCode) {
+    mockV1.kill('SIGINT');
+    mockV2.kill('SIGINT');
   }
+  process.on('exit', exitHandler.bind(null, { cleanup: true }));
 }

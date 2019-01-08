@@ -43,7 +43,9 @@ const Helpers = {
                 ["0.0000008", "8.9"]
             ]
         }
-    }
+    },
+    getStreamsFromUrl: (url) => url.replace("/", "").split(/[&?]stream=/).filter(stream => stream.length > 0),
+    unique: (list) => list.filter((value, index, self) => self.indexOf(value) === index)
 }
 
 module.exports = Helpers;
