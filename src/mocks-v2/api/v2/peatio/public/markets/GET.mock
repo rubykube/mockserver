@@ -28,5 +28,30 @@ access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Au
   {
     "id": "xrpbtc",
     "name": "XRP/BTC"
+  },
+  {
+      "id": "dashzar",
+      "name": "DASH/ZAR"
+  },
+  {
+       "id": "bchzar",
+       "name": "BCH/ZAR"
+  },
+  {
+       "id": "ethzar",
+       "name": "ETH/ZAR"
+  },
+  {
+       "id": "eurusd",
+       "name": "EUR/USD"
+  },
+  {
+       "id": "ltczar",
+       "name": "LTC/ZAR"
+  },
+  {
+       "id": "xrpzar",
+       "name": "XRP/ZAR"
   }
+
 ]
