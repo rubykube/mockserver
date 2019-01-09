@@ -2,6 +2,6 @@ HTTP/2 200
 access-control-allow-origin: *
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
-access-control-allow-credentials: true
+
 
 {"deposit":{"minimum_level":3},"withdraw":{"minimum_level":3},"trading":{"minimum_level":3}}
