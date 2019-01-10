@@ -8,7 +8,7 @@ const argv = require('yargs').argv;
 const apiV1Port = argv.portV1 || 9001;
 const apiV2Port = argv.portV2 || 9002;
 const slangerPort = argv.slangerPort || 9010;
-const rangerPort = argv.slangerPort || 9011;
+const rangerPort = argv.rangerPort || 9011;
 const help = argv.h || argv.help;
 
 const markets = [
