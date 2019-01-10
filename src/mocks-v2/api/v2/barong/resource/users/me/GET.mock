@@ -3,12 +3,11 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
 
-
 {
-  "uid":"SNCE464361D3",
-  "email":"admin@peatio.tech",
-  "role":"member",
-  "level":3,
-  "otp_enabled":false,
-  "state":"active"
+    "email": "john@barong.io",
+    "level": 3,
+    "otp": false,
+    "role": "member",
+    "state": "active",
+    "uid": "ID787E383938"
 }
