@@ -26,7 +26,10 @@ const startMock = (port, version) => {
   const mock = spawn("./src/mock.js", ["--port", port, "--dir", `src/mocks-${version}`]);
   mock.stdout.on('data', log);
   mock.stderr.on('data', log);
-  mock.on('close', (code) => log(`process exited with code ${code}`.red));
+  mock.on('close', (code) => {
+    log(`process exited with code ${code}`.red);
+    process.exit();
+  });
   return mock;
 }
 
