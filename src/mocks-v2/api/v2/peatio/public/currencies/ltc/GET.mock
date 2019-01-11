@@ -1,7 +1,9 @@
-HTTP/2 200 
-content-type: application/json
-access-control-allow-origin: *
-access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
 
 {
   "id": "ltc",
