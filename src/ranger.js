@@ -125,7 +125,7 @@ class RangerMock {
           break;
       }
     } catch (err) {
-      console.log(`Ranger: Something went wrong: ${err}`);
+      console.log(`Ranger: Something went wrong: ${err} (message: ${message})`);
     }
 
   }
