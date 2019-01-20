@@ -12,7 +12,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0003",
     "market": "ethbtc",
     "created_at": "2018-12-14T12:00:47+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202857
   },
   {
     "id": 162387,
@@ -21,7 +23,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.009",
     "market": "ethbtc",
     "created_at": "2018-12-14T11:32:42+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202400
   },
   {
     "id": 162386,
@@ -30,7 +34,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00045",
     "market": "ethbtc",
     "created_at": "2018-12-14T11:32:16+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202401
   },
   {
     "id": 162385,
@@ -39,7 +45,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00006",
     "market": "ethbtc",
     "created_at": "2018-12-14T11:32:16+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202402
   },
   {
     "id": 162384,
@@ -48,7 +56,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0006",
     "market": "ethbtc",
     "created_at": "2018-12-14T11:31:44+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 20244
   },
   {
     "id": 162383,
@@ -57,7 +67,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0006",
     "market": "ethbtc",
     "created_at": "2018-12-14T11:30:54+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202412
   },
   {
     "id": 162382,
@@ -66,7 +78,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0006",
     "market": "ethbtc",
     "created_at": "2018-12-14T11:30:28+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202443
   },
   {
     "id": 162379,
@@ -75,7 +89,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0006",
     "market": "ethbtc",
     "created_at": "2018-12-14T10:05:27+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202423
   },
   {
     "id": 162361,
@@ -84,7 +100,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0006",
     "market": "ethbtc",
     "created_at": "2018-12-13T16:53:33+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202408
   },
   {
     "id": 162354,
@@ -93,7 +111,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.006",
     "market": "ethbtc",
     "created_at": "2018-12-13T14:50:42+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202445
   },
   {
     "id": 162353,
@@ -102,7 +122,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.002",
     "market": "ethbtc",
     "created_at": "2018-12-13T14:50:42+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202410
   },
   {
     "id": 162352,
@@ -111,7 +133,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0018",
     "market": "ethbtc",
     "created_at": "2018-12-13T14:49:51+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202420
   },
   {
     "id": 162351,
@@ -120,7 +144,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00114",
     "market": "ethbtc",
     "created_at": "2018-12-13T14:48:35+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202407
   },
   {
     "id": 162350,
@@ -129,7 +155,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00088",
     "market": "ethbtc",
     "created_at": "2018-12-13T14:48:35+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202498
   },
   {
     "id": 162349,
@@ -138,7 +166,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0024",
     "market": "ethbtc",
     "created_at": "2018-12-13T14:47:24+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202487
   },
   {
     "id": 162339,
@@ -147,7 +177,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0008",
     "market": "ethbtc",
     "created_at": "2018-12-12T14:01:45+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202474
   },
   {
     "id": 162337,
@@ -156,7 +188,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0008",
     "market": "ethbtc",
     "created_at": "2018-12-12T13:59:27+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202439
   },
   {
     "id": 162334,
@@ -165,7 +199,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0008",
     "market": "ethbtc",
     "created_at": "2018-12-12T12:09:41+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202497
   },
   {
     "id": 162331,
@@ -174,7 +210,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0008",
     "market": "ethbtc",
     "created_at": "2018-12-12T12:04:50+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202568
   },
   {
     "id": 162326,
@@ -183,7 +221,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00552",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:40:55+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202675
   },
   {
     "id": 162325,
@@ -192,7 +232,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00279",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:40:55+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202345
   },
   {
     "id": 162324,
@@ -201,7 +243,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.00621",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:40:13+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202575
   },
   {
     "id": 162323,
@@ -210,7 +254,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0031",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:40:13+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202456
   },
   {
     "id": 162322,
@@ -219,7 +265,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.002",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:39:56+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202678
   },
   {
     "id": 162321,
@@ -228,7 +276,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.008",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:39:56+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202976
   },
   {
     "id": 162320,
@@ -237,7 +287,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.001",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:38:19+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202341
   },
   {
     "id": 162318,
@@ -246,7 +298,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.001",
     "market": "ethbtc",
     "created_at": "2018-12-12T11:27:15+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202236
   },
   {
     "id": 162312,
@@ -255,7 +309,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.002",
     "market": "ethbtc",
     "created_at": "2018-12-10T17:50:46+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202665
   },
   {
     "id": 162311,
@@ -264,7 +320,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.017",
     "market": "ethbtc",
     "created_at": "2018-12-10T17:50:46+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202765
   },
   {
     "id": 162310,
@@ -273,7 +331,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.015",
     "market": "ethbtc",
     "created_at": "2018-12-10T17:50:45+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202343
   },
   {
     "id": 162292,
@@ -282,7 +342,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.016",
     "market": "ethbtc",
     "created_at": "2018-12-10T12:06:53+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202655
   },
   {
     "id": 162284,
@@ -291,7 +353,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.002",
     "market": "ethbtc",
     "created_at": "2018-12-07T11:48:12+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202865
   },
   {
     "id": 162266,
@@ -300,7 +364,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.002",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:59:31+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202349
   },
   {
     "id": 162265,
@@ -309,7 +375,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.027",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:59:30+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202129
   },
   {
     "id": 162262,
@@ -318,7 +386,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0297",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:48:12+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202776
   },
   {
     "id": 162261,
@@ -327,7 +397,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.2646",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:48:12+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202445
   },
   {
     "id": 162256,
@@ -336,7 +408,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.003",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:47:03+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202332
   },
   {
     "id": 162251,
@@ -345,7 +419,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0116",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:40:29+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202089
   },
   {
     "id": 162248,
@@ -354,7 +430,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.008",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:12:59+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202487
   },
   {
     "id": 162247,
@@ -363,7 +441,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.009",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:12:59+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202487
   },
   {
     "id": 162246,
@@ -372,7 +452,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.006",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:12:15+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202895
   },
   {
     "id": 162245,
@@ -381,7 +463,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.01",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:12:15+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202653
   },
   {
     "id": 162244,
@@ -390,7 +474,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0025",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:10:47+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202265
   },
   {
     "id": 162243,
@@ -399,7 +485,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0088",
     "market": "ethbtc",
     "created_at": "2018-12-07T10:10:47+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202554
   },
   {
     "id": 162242,
@@ -408,7 +496,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0022",
     "market": "ethbtc",
     "created_at": "2018-12-07T09:36:08+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202998
   },
   {
     "id": 162241,
@@ -417,7 +507,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.01",
     "market": "ethbtc",
     "created_at": "2018-12-07T09:36:08+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202779
   },
   {
     "id": 162240,
@@ -426,7 +518,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.01",
     "market": "ethbtc",
     "created_at": "2018-12-07T09:35:15+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "bid",
+    "order_id": 202369
   },
   {
     "id": 162239,
@@ -435,7 +529,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.015",
     "market": "ethbtc",
     "created_at": "2018-12-07T09:30:21+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "ask",
+    "order_id": 202890
   },
   {
     "id": 162238,
@@ -444,7 +540,9 @@ Access-Control-Allow-Credentials: true
     "funds": "0.0125",
     "market": "ethbtc",
     "created_at": "2018-12-07T09:30:20+01:00",
-    "side": null
+    "maker_type": "buy",
+    "side": "ask",
+    "order_id": 202098
   },
   {
     "id": 162237,
@@ -453,6 +551,8 @@ Access-Control-Allow-Credentials: true
     "funds": "0.004",
     "market": "ethbtc",
     "created_at": "2018-12-07T09:29:19+01:00",
-    "side": null
+    "maker_type": "sell",
+    "side": "bid",
+    "order_id": 202937
   }
 ]
