@@ -54,7 +54,7 @@ const matchedTradesMock = (ws, marketId) => {
     volume += 0.00005;
     let bidId = kind == "bid" ? orderId : orderId - 10;
     let askId = kind == "ask" ? orderId : orderId - 10;
-    let at = Date.now();
+    let at = Date.now() / 1000;
     if (ws.authenticated) {
       sendEvent(ws, ["order",{"id":orderId,"at":at,"market":marketId,"kind":kind,"price":price,"state":"wait","volume":volume,"origin_volume":volume}]);
       sendEvent(ws, ["order",{"id":orderId,"at":at,"market":marketId,"kind":kind,"price":price,"state":"done","volume":"0.0","origin_volume":volume}]);
