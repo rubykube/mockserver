@@ -3,7 +3,8 @@ const Helpers = require('./helpers')
 
 function isSubscribed(streams, routingKey) {
   for (const i in streams) {
-    if(routingKey.indexOf(streams[i]) != -1) {
+    const stream = streams[i];
+    if (routingKey.startsWith(stream) || routingKey.endsWith(stream)) {
       return true;
     }
   }
