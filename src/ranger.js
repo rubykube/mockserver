@@ -80,7 +80,7 @@ class RangerMock {
 
   }
   initConnection(ws, request) {
-    ws.authenticated = false;
+    ws.authenticated = true;
     ws.timers = [];
     ws.streams = [];
 
