@@ -5,54 +5,76 @@ Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Credentials: true
 
+
 [
   {
     "id": "btczar",
-    "name": "BTC/ZAR"
+    "name": "BTC/ZAR",
+    "ask_unit": "btc",
+    "bid_unit": "zar",
+    "ask_fee": "0.0015",
+    "bid_fee": "0.0015",
+    "min_ask_price": "0.0",
+    "max_bid_price": "0.0",
+    "min_ask_amount": "0.0",
+    "min_bid_amount": "0.0",
+    "ask_precision": 4,
+    "bid_precision": 4
   },
   {
     "id": "bchzar",
-    "name": "BCH/ZAR"
+    "name": "BCH/ZAR",
+    "ask_unit": "bch",
+    "bid_unit": "zar",
+    "ask_fee": "0.0015",
+    "bid_fee": "0.0015",
+    "min_ask_price": "0.0",
+    "max_bid_price": "0.0",
+    "min_ask_amount": "0.0",
+    "min_bid_amount": "0.0",
+    "ask_precision": 4,
+    "bid_precision": 4
   },
   {
     "id": "ethbtc",
-    "name": "ETH/BTC"
+    "name": "ETH/BTC",
+    "ask_unit": "eth",
+    "bid_unit": "btc",
+    "ask_fee": "0.0015",
+    "bid_fee": "0.0015",
+    "min_ask_price": "0.0",
+    "max_bid_price": "0.0",
+    "min_ask_amount": "0.0",
+    "min_bid_amount": "0.0",
+    "ask_precision": 4,
+    "bid_precision": 4
   },
   {
     "id": "dashbtc",
-    "name": "DASH/BTC"
+    "name": "DASH/BTC",
+    "ask_unit": "dash",
+    "bid_unit": "btc",
+    "ask_fee": "0.0015",
+    "bid_fee": "0.0015",
+    "min_ask_price": "0.0",
+    "max_bid_price": "0.0",
+    "min_ask_amount": "0.0",
+    "min_bid_amount": "0.0",
+    "ask_precision": 4,
+    "bid_precision": 4
   },
   {
-    "id": "ltcbtc",
-    "name": "LTC/BTC"
-  },
-  {
-    "id": "xrpbtc",
-    "name": "XRP/BTC"
-  },
-  {
-      "id": "dashzar",
-      "name": "DASH/ZAR"
-  },
-  {
-       "id": "bchzar",
-       "name": "BCH/ZAR"
-  },
-  {
-       "id": "ethzar",
-       "name": "ETH/ZAR"
-  },
-  {
-       "id": "eurusd",
-       "name": "EUR/USD"
-  },
-  {
-       "id": "ltczar",
-       "name": "LTC/ZAR"
-  },
-  {
-       "id": "xrpzar",
-       "name": "XRP/ZAR"
+    "id": "eurusd",
+    "name": "EUR/USD",
+    "ask_unit": "eur",
+    "bid_unit": "usd",
+    "ask_fee": "0.0015",
+    "bid_fee": "0.0015",
+    "min_ask_price": "0.0",
+    "max_bid_price": "0.0",
+    "min_ask_amount": "0.0",
+    "min_bid_amount": "0.0",
+    "ask_precision": 4,
+    "bid_precision": 4
   }
-
 ]
