@@ -10,10 +10,15 @@ const Helpers = {
             marketId,
         }
     },
+
+
     getTickers: (markets) => {
         let tickers = {}
         markets.forEach(name => {
             let { baseUnit, quoteUnit, marketId } = Helpers.getMarketInfos(name);
+            const change = (10 + Math.random() * 10) * (Math.random() > 0.5 ? 1 : -1);
+            const signPrefix = change >= 0 ? '+' : '';
+
             tickers[marketId] = {
                 "name": name,
                 "base_unit": baseUnit,
@@ -25,7 +30,9 @@ const Helpers = {
                 "volume": "0.0",
                 "sell": "0.0",
                 "buy": "0.0",
-                "at": Date.now()
+                "avg_price": "0.0",
+                "price_change_percent": `${signPrefix}${change.toFixed(2)}%`,
+                "at": Date.now() / 1000,
             }
         });
         return tickers;
