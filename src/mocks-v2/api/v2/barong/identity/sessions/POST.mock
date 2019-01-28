@@ -1,5 +1,6 @@
-HTTP/2 200 
-access-control-allow-origin: *
+HTTP/2 200
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
 
