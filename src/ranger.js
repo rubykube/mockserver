@@ -11,22 +11,23 @@ function isSubscribed(streams, routingKey) {
   return false;
 }
 
-const sendEvent = (ws, event) => {
-  const routingKey = event[0]
-  if(isSubscribed(ws.streams, routingKey)) {
-    ws.send(JSON.stringify(event));
+const sendEvent = (ws, routingKey, event) => {
+  if (isSubscribed(ws.streams, routingKey)) {
+    const payload = {};
+    payload[routingKey] = event;
+    ws.send(JSON.stringify(payload));
   }
 }
 
 const tickersMock = (ws, markets) => () => {
-  sendEvent(ws, ["global.tickers", Helpers.getTickers(markets)]);
+  sendEvent(ws, "global.tickers", Helpers.getTickers(markets));
 };
 
 /*
   Example: ["btcusd.update",{"asks":[["1000.0","0.1"]],"bids":[]}]
 */
 const orderBookUpdateMock = (ws, marketId) => () => {
-  sendEvent(ws, [`${marketId}.update`, Helpers.getOrderBook()]);
+  sendEvent(ws, `${marketId}.update`, Helpers.getOrderBook());
 };
 
 /*
@@ -57,11 +58,11 @@ const matchedTradesMock = (ws, marketId) => {
     let askId = kind == "ask" ? orderId : orderId - 10;
     let at = Date.now() / 1000;
     if (ws.authenticated) {
-      sendEvent(ws, ["order",{"id":orderId,"at":at,"market":marketId,"kind":kind,"price":price,"state":"wait","volume":volume,"origin_volume":volume}]);
-      sendEvent(ws, ["order",{"id":orderId,"at":at,"market":marketId,"kind":kind,"price":price,"state":"done","volume":"0.0","origin_volume":volume}]);
-      sendEvent(ws, ["trade",{"id":tradeId,"kind":kind,"at":at,"price":price,"volume":volume,"ask_id":askId,"bid_id":bidId,"market":marketId}]);
+      sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "volume": volume, "origin_volume": volume });
+      sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "volume": "0.0", "origin_volume": volume });
+      sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
     }
-    sendEvent(ws, [`${marketId}.trades`,{"trades":[{"tid":tradeId,"type":kind,"date":at,"price":price,"amount":volume}]}]);
+    sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "type": kind, "date": at, "price": price, "amount": volume }] });
   }
 };
 
