@@ -6,7 +6,7 @@ const tickersMock = (ws, channel, markets) => () => {
 };
 
 const orderBookUpdateMock = (ws, channel) => () => {
-  ws.send(JSON.stringify({"event": "update","data": Helpers.getOrderBook(),"channel": channel}))
+  ws.send(JSON.stringify({"event": "update","data": Helpers.getDepth(),"channel": channel}))
 };
 
 var tradeId = 100000;

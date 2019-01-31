@@ -37,17 +37,22 @@ const Helpers = {
         });
         return tickers;
     },
-    getOrderBook: () => {
+    getDepth: () => {
+        const delta = 2 * (1 + Math.cos(2 * Math.PI * Date.now() / 1000 / 3600))
+        const fP = (price) => parseFloat(price) + delta;
+        const fV = (volume) => parseFloat(volume) + delta * 10;
         return {
             "asks": [
-                ["0.0005", "97.4"],
-                ["2.0", "0.8569"],
-                ["2.5", "1.0"],
-                ["3.0", "1.0"]
+                [fP("15.0"), fV("1.5")],
+                [fP("20.0"), fV("80")],
+                [fP("20.5"), fV("10.0")],
+                [fP("30.0"), fV("1.0")]
             ],
             "bids": [
-                ["0.0001", "10.0"],
-                ["0.0000008", "8.9"]
+                [fP("10.95"), fV("1.5")],
+                [fP("10.90"), fV("45")],
+                [fP("10.85"), fV("35")],
+                [fP("10.70"), fV("10")],
             ]
         }
     },

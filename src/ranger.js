@@ -27,7 +27,7 @@ const tickersMock = (ws, markets) => () => {
   Example: ["btcusd.update",{"asks":[["1000.0","0.1"]],"bids":[]}]
 */
 const orderBookUpdateMock = (ws, marketId) => () => {
-  sendEvent(ws, `${marketId}.update`, Helpers.getOrderBook());
+  sendEvent(ws, `${marketId}.update`, Helpers.getDepth());
 };
 
 /*
