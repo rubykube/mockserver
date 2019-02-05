@@ -49,6 +49,8 @@ const timeToPrice = (time) => {
 }
 
 const kLine = (time, period) => {
+  const periodInSeconds = parseInt(period * 60);
+  time = parseInt(time / periodInSeconds) * periodInSeconds;
   const open = timeToPrice(time);
   const close = timeToPrice(time + period);
   const high = close + 2;
@@ -72,7 +74,7 @@ const matchedTradesMock = (ws, marketId) => {
     volume += 0.00005;
     let bidId = kind == "bid" ? orderId : orderId - 10;
     let askId = kind == "ask" ? orderId : orderId - 10;
-    let at = Date.now() / 1000;
+    let at = parseInt(Date.now() / 1000);
     if (ws.authenticated) {
       sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "volume": volume, "origin_volume": volume });
       sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "volume": "0.0", "origin_volume": volume });

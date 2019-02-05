@@ -18,6 +18,8 @@ const timeToPrice = (time) => {
 }
 
 const kLine = (time, period) => {
+    const periodInSeconds = parseInt(period * 60);
+    time = parseInt(time / periodInSeconds) * periodInSeconds;
     const open = timeToPrice(time);
     const close = timeToPrice(time + period);
     const high = close + 2;
@@ -27,14 +29,14 @@ const kLine = (time, period) => {
 
 if (queryIndex != -1) {
     const vars = parseQuery(request.url);
-    const period = parseInt(vars.period) * 60;
+    const period = parseInt(vars.period);
     const time_to = parseInt(vars.time_to);
     const time_from = parseInt(vars.time_from);
     let time = time_from;
 
     while (time < time_to) {
         k.push(kLine(time, period));
-        time += period;
+        time += period * 60;
     }
 }
 
