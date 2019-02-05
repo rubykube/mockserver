@@ -41,6 +41,21 @@ const orderBookUpdateMock = (ws, marketId) => () => {
       ["macarstc.trades",{"trades":[{"tid":312,"type":"buy","date":1546605232,"price":"1.17","amount":"0.1"}]}]
 */
 
+// Those functions are the same used in k-line mocked API
+const timeToPrice = (time) => {
+  const fakePeriod = 86400;
+  const step = 100;
+  return (step / 4 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI)) + parseInt(step * time / fakePeriod));
+}
+
+const kLine = (time, period) => {
+  const open = timeToPrice(time);
+  const close = timeToPrice(time + period);
+  const high = close + 2;
+  const low = open - 2;
+  return [time, open, high, low, close]
+}
+
 let tradeId = 100000;
 let orderId = 100;
 
@@ -64,6 +79,18 @@ const matchedTradesMock = (ws, marketId) => {
       sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
     }
     sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "type": takerType, "date": at, "price": price, "amount": volume }] });
+    sendEvent(ws, `${marketId}.kline-1m`, kLine(at, 1));
+    sendEvent(ws, `${marketId}.kline-5m`, kLine(at, 5));
+    sendEvent(ws, `${marketId}.kline-15m`, kLine(at, 15));
+    sendEvent(ws, `${marketId}.kline-30m`, kLine(at, 30));
+    sendEvent(ws, `${marketId}.kline-1h`, kLine(at, 60));
+    sendEvent(ws, `${marketId}.kline-2h`, kLine(at, 120));
+    sendEvent(ws, `${marketId}.kline-4h`, kLine(at, 240));
+    sendEvent(ws, `${marketId}.kline-6h`, kLine(at, 360));
+    sendEvent(ws, `${marketId}.kline-12h`, kLine(at, 720));
+    sendEvent(ws, `${marketId}.kline-1d`, kLine(at, 1440));
+    sendEvent(ws, `${marketId}.kline-3d`, kLine(at, 4320));
+    sendEvent(ws, `${marketId}.kline-1w`, kLine(at, 10080));
   }
 };
 

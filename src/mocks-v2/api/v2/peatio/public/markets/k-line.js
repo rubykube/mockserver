@@ -10,10 +10,19 @@ const parseQuery = (url) => {
     return vars;
 }
 
+// Those functions are the same used in k-line mocked ranger event
 const timeToPrice = (time) => {
     const fakePeriod = 86400;
     const step = 100;
     return (step / 4 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI)) + parseInt(step * time / fakePeriod));
+}
+
+const kLine = (time, period) => {
+    const open = timeToPrice(time);
+    const close = timeToPrice(time + period);
+    const high = close + 2;
+    const low = open - 2;
+    return [time, open, high, low, close]
 }
 
 if (queryIndex != -1) {
@@ -22,17 +31,9 @@ if (queryIndex != -1) {
     const time_to = parseInt(vars.time_to);
     const time_from = parseInt(vars.time_from);
     let time = time_from;
-    let open;
-    let high;
-    let low;
-    let close;
 
     while (time < time_to) {
-        open = timeToPrice(time);
-        close = timeToPrice(time + period);
-        high = close + 2;
-        low = open - 2;
-        k.push([time, open, high, low, close]);
+        k.push(kLine(time, period));
         time += period;
     }
 }
