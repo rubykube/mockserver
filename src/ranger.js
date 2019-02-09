@@ -67,7 +67,7 @@ const kLine = (time, period) => {
   const high = Math.max(open, close) + delta;
   const low = Math.min(open, close) - delta;
   const volume = timeToVolume(time, periodInSeconds);
-  return [roundedTime, open, high, low, close, volume]
+  return [roundedTime, open, high, low, close, volume].map(String);
 }
 
 let tradeId = 100000;
