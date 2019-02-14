@@ -70,16 +70,16 @@ const kLine = (time, period) => {
   return [roundedTime, open, high, low, close, volume].map(String);
 }
 
-let tradeId = 100000;
-let orderId = 100;
+let tradeIndex = 100000;
+let orderIndex = 100;
 
 const matchedTradesMock = (ws, marketId) => {
   let kind = "bid";
   let price = 0.0001;
   let volume = 0.0001;
   return function () {
-    orderId++;
-    tradeId++;
+    const orderId = orderIndex++;
+    const tradeId = tradeIndex++;
     kind = kind == "bid" ? "ask" : "bid";
     const takerType = Math.random() < 0.5 ? "buy" : "sell";
     price += 0.0001;
@@ -89,25 +89,37 @@ const matchedTradesMock = (ws, marketId) => {
     let at = parseInt(Date.now() / 1000);
     if (ws.authenticated) {
       sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "volume": volume, "origin_volume": volume });
-      sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "volume": "0.0", "origin_volume": volume });
-      sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
+
+      setTimeout(() => {
+        const remainingVolume = volume / (Math.random() + 2);
+        sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "volume": String(remainingVolume), "origin_volume": volume });
+
+        setTimeout(() => {
+          sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "volume": "0.0", "origin_volume": volume });
+          sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
+        }, 1000);
+      }, 1000);
     }
     sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "type": takerType, "date": at, "price": price, "amount": volume }] });
-    sendEvent(ws, `${marketId}.kline-1m`, kLine(at, 1));
-    sendEvent(ws, `${marketId}.kline-5m`, kLine(at, 5));
-    sendEvent(ws, `${marketId}.kline-15m`, kLine(at, 15));
-    sendEvent(ws, `${marketId}.kline-30m`, kLine(at, 30));
-    sendEvent(ws, `${marketId}.kline-1h`, kLine(at, 60));
-    sendEvent(ws, `${marketId}.kline-2h`, kLine(at, 120));
-    sendEvent(ws, `${marketId}.kline-4h`, kLine(at, 240));
-    sendEvent(ws, `${marketId}.kline-6h`, kLine(at, 360));
-    sendEvent(ws, `${marketId}.kline-12h`, kLine(at, 720));
-    sendEvent(ws, `${marketId}.kline-1d`, kLine(at, 1440));
-    sendEvent(ws, `${marketId}.kline-3d`, kLine(at, 4320));
-    sendEvent(ws, `${marketId}.kline-1w`, kLine(at, 10080));
   }
 };
 
+const klinesMock = (ws, marketId) => () => {
+  let at = parseInt(Date.now() / 1000);
+
+  sendEvent(ws, `${marketId}.kline-1m`, kLine(at, 1));
+  sendEvent(ws, `${marketId}.kline-5m`, kLine(at, 5));
+  sendEvent(ws, `${marketId}.kline-15m`, kLine(at, 15));
+  sendEvent(ws, `${marketId}.kline-30m`, kLine(at, 30));
+  sendEvent(ws, `${marketId}.kline-1h`, kLine(at, 60));
+  sendEvent(ws, `${marketId}.kline-2h`, kLine(at, 120));
+  sendEvent(ws, `${marketId}.kline-4h`, kLine(at, 240));
+  sendEvent(ws, `${marketId}.kline-6h`, kLine(at, 360));
+  sendEvent(ws, `${marketId}.kline-12h`, kLine(at, 720));
+  sendEvent(ws, `${marketId}.kline-1d`, kLine(at, 1440));
+  sendEvent(ws, `${marketId}.kline-3d`, kLine(at, 4320));
+  sendEvent(ws, `${marketId}.kline-1w`, kLine(at, 10080));
+};
 class RangerMock {
   constructor(port, markets) {
     this.markets = markets;
@@ -134,6 +146,7 @@ class RangerMock {
       let { baseUnit, quoteUnit, marketId } = Helpers.getMarketInfos(name);
       ws.timers.push(setInterval(orderBookUpdateMock(ws, marketId), 3000));
       ws.timers.push(setInterval(matchedTradesMock(ws, marketId), 1000))
+      ws.timers.push(setInterval(klinesMock(ws, marketId), 2500))
     });
   }
   closeConnection(ws) {
