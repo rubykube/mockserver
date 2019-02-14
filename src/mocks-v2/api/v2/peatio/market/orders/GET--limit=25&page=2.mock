@@ -8,7 +8,7 @@ Total: 28
 
 [
     { 
-      "id":162,
+      "id":675,
       "side":"buy",
       "ord_type":"limit",
       "price":"0.5",
@@ -22,7 +22,7 @@ Total: 28
       "trades_count":0
     },
     { 
-      "id":16,
+      "id":101,
       "side":"sell",
       "ord_type":"limit",
       "price":"0.5",
@@ -36,7 +36,7 @@ Total: 28
       "trades_count":0
     },
     { 
-      "id":162,
+      "id":102,
       "side":"buy",
       "ord_type":"market",
       "price":"0.5",
