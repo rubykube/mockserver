@@ -1,1 +1,9 @@
 node_modules/
+
+# IDE
+.idea/
+
+# Misc
+.DS_Store
+.env
+env.js
