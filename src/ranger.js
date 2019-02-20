@@ -37,9 +37,9 @@ const orderBookUpdateMock = (ws, marketId) => () => {
 /*
   Success order scenario:
     * Private messages:
-      ["order",{"id":758,"at":1546605232,"market":"macarstc","kind":"bid","price":"1.17","state":"wait","volume":"0.1","origin_volume":"0.1"}]
-      ["order",{"id":758,"at":1546605232,"market":"macarstc","kind":"bid","price":"1.17","state":"done","volume":"0.0","origin_volume":"0.1"}]
-      ["trade",{"id":312,"kind":"bid","at":1546605232,"price":"1.17","volume":"0.1","ask_id":651,"bid_id":758,"market":"macarstc"}]
+      ["order",{"id":758,"at":1546605232,"market":"macarstc","kind":"bid","price":"1.17","state":"wait","remaining_volume":"0.1","origin_volume":"0.1"}]
+      ["order",{"id":758,"at":1546605232,"market":"macarstc","kind":"bid","price":"1.17","state":"done","remaining_volume":"0.0","origin_volume":"0.1"}]
+      ["trade",{"id":312,"kind":"bid","at":1546605232,"price":"1.17","remaining_volume":"0.1","ask_id":651,"bid_id":758,"market":"macarstc"}]
 
     * Public messages:
       ["macarstc.trades",{"trades":[{"tid":312,"type":"buy","date":1546605232,"price":"1.17","amount":"0.1"}]}]
@@ -88,14 +88,14 @@ const matchedTradesMock = (ws, marketId) => {
     let askId = kind == "ask" ? orderId : orderId - 10;
     let at = parseInt(Date.now() / 1000);
     if (ws.authenticated) {
-      sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "volume": volume, "origin_volume": volume });
+      sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "remaining_volume": volume, "origin_volume": volume });
 
       setTimeout(() => {
         const remainingVolume = volume / (Math.random() + 2);
-        sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "volume": String(remainingVolume), "origin_volume": volume });
+        sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "remaining_volume": String(remainingVolume), "origin_volume": volume });
 
         setTimeout(() => {
-          sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "volume": "0.0", "origin_volume": volume });
+          sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "remaining_volume": "0.0", "origin_volume": volume });
           sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
         }, 1000);
       }, 1000);
