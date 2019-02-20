@@ -15,7 +15,7 @@ Access-Control-Allow-Credentials: true
     "state": "wait",
     "market": "ethusd",
     "created_at": "2018-12-14T11:36:21+01:00",
-    "volume": "1.0",
+    "origin_volume": "1.0",
     "remaining_volume": "1.0",
     "executed_volume": "0.0",
     "trades_count": 0
