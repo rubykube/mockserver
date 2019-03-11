@@ -17,11 +17,11 @@ class Mock {
             }
 
             if (verbose) {
-                const url = `http://0.0.0.0:${port}`.green
+                const url = `http://0.0.0.0:${port}`.green;
                 console.log(`Mockserver serving ${directory} on: ${url}`);
             }
         })
     }
 }
 
-new Mock(directory, port, true)
+new Mock(directory, port, true);

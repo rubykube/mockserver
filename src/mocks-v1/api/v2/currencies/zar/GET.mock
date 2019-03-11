@@ -4,7 +4,7 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 
 {
-  "id": "zar",
+  "id": "usd",
   "symbol": "$",
   "type": "fiat",
   "deposit_fee": "0.0",

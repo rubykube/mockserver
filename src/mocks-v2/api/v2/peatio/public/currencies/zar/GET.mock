@@ -6,7 +6,7 @@ Access-Control-Max-Age: 3600
 Access-Control-Allow-Credentials: true
 
 {
-  "id": "zar",
+  "id": "usd",
   "name": "South African Rand",
   "symbol": "$",
   "type": "fiat",

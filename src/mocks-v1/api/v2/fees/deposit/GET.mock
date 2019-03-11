@@ -53,7 +53,7 @@ access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Au
     }
   },
   {
-    "currency": "zar",
+    "currency": "usd",
     "type": "fiat",
     "fee": {
       "type": "fixed",

@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const Helpers = require('./helpers')
+const Helpers = require('./helpers');
 
 const tickersMock = (ws, channel, markets) => () => {
   ws.send(JSON.stringify({"event": "tickers","data": Helpers.getTickers(markets),"channel": channel}));
@@ -16,7 +16,7 @@ const tradesMock = (ws, channel) => {
   var amount = 0.0001;
   return function () {
     tradeId++;
-    tradeSide = tradeSide == "buy" ? "sell" : "buy";
+    tradeSide = tradeSide === "buy" ? "sell" : "buy";
     price += 0.0001;
     amount += 0.00005;
     var data = {
@@ -30,7 +30,7 @@ const tradesMock = (ws, channel) => {
             "amount": amount.toString(),
           }
         ]
-    }
+    };
     ws.send(JSON.stringify({"event": "trades", "data": data, "channel": channel}));
   }
 };
@@ -38,7 +38,7 @@ const tradesMock = (ws, channel) => {
 class SlangerMock {
   constructor(port, markets) {
     const wss = new WebSocket.Server({ port: port });
-    const url = `ws://0.0.0.0:${port}`.green
+    const url = `ws://0.0.0.0:${port}`.green;
     console.log(`Slanger: listening on ${url}`);
 
     wss.on('connection', function connection(ws) {

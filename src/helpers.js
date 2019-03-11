@@ -12,11 +12,11 @@ const Helpers = {
     },
 
 
-    getTickers: (markets) => {
-        let tickers = {}
+    getTickers: (markets, prevPrice, price) => {
+        let tickers = {};
         markets.forEach(name => {
             let { baseUnit, quoteUnit, marketId } = Helpers.getMarketInfos(name);
-            const change = (10 + Math.random() * 10) * (Math.random() > 0.5 ? 1 : -1);
+            const change = (price - prevPrice) / price;
             const signPrefix = change >= 0 ? '+' : '';
 
             tickers[marketId] = {
@@ -25,7 +25,7 @@ const Helpers = {
                 "quote_unit": quoteUnit,
                 "low": "0.001",
                 "high": "0.145",
-                "last": "0.134",
+                "last": price,
                 "open": 0.134,
                 "volume": "0.0",
                 "sell": "0.0",
@@ -38,7 +38,7 @@ const Helpers = {
         return tickers;
     },
     getDepth: () => {
-        const delta = 2 * (1 + Math.cos(2 * Math.PI * Date.now() / 1000 / 3600))
+        const delta = 2 * (1 + Math.cos(2 * Math.PI * Date.now() / 1000 / 3600));
         const fP = (price) => parseFloat(price) + delta;
         const fV = (volume) => parseFloat(volume) + delta * 10;
         return {
@@ -58,6 +58,6 @@ const Helpers = {
     },
     getStreamsFromUrl: (url) => url.replace("/", "").split(/[&?]stream=/).filter(stream => stream.length > 0),
     unique: (list) => list.filter((value, index, self) => self.indexOf(value) === index)
-}
+};
 
 module.exports = Helpers;
