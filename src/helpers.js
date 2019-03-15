@@ -38,21 +38,25 @@ const Helpers = {
         return tickers;
     },
     getDepth: () => {
-        const delta = 2 * (1 + Math.cos(2 * Math.PI * Date.now() / 1000 / 3600));
+        const minDay = 3865;
+        const maxDay = 5000;
+        const fakePeriod = 86400;
+        const time = parseInt(Date.now() / 1000);
+        const delta = minDay + (maxDay - minDay) / 2 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI));
         const fP = (price) => parseFloat(price) + delta;
         const fV = (volume) => parseFloat(volume) + delta * 10;
         return {
             "asks": [
-                [fP("15.0"), fV("1.5")],
-                [fP("20.0"), fV("80")],
-                [fP("20.5"), fV("10.0")],
-                [fP("30.0"), fV("1.0")]
+                [fP("10"), fV("1")],
+                [fP("20"), fV("2")],
+                [fP("30"), fV("3")],
+                [fP("40"), fV("4")]
             ],
             "bids": [
-                [fP("10.95"), fV("1.5")],
-                [fP("10.90"), fV("45")],
-                [fP("10.85"), fV("35")],
-                [fP("10.70"), fV("10")],
+                [fP("-10"), fV("1")],
+                [fP("-20"), fV("2")],
+                [fP("-30"), fV("3")],
+                [fP("-40"), fV("4")],
             ]
         }
     },

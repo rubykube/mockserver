@@ -48,8 +48,8 @@ const orderBookUpdateMock = (ws, marketId) => () => {
 */
 
 // Those functions are the same used in k-line mocked API
-const minDay = 6;
-const maxDay = 10;
+const minDay = 3865;
+const maxDay = 5000;
 const fakePeriod = 86400;
 
 const timeToPrice = (time) => {
@@ -57,7 +57,7 @@ const timeToPrice = (time) => {
 };
 
 const timeToVolume = (time, periodInSeconds) => {
-  return maxDay * 10 / 2 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI));
+  return maxDay * 100 / 2 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI));
 };
 
 const kLine = (time, period) => {
@@ -77,7 +77,8 @@ let orderIndex = 100;
 
 const matchedTradesMock = (ws, marketId) => {
   let kind = "bid";
-  let price = 0.0001;
+  const periodInSeconds = parseInt(15 * 60);
+  let price = timeToPrice(parseInt(Date.now() / 1000) + periodInSeconds);
   let volume = 0.0001;
   return function () {
     const orderId = orderIndex++;
@@ -99,8 +100,8 @@ const matchedTradesMock = (ws, marketId) => {
         setTimeout(() => {
           sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "remaining_volume": "0.0", "origin_volume": volume });
           sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
-        }, 1000);
-      }, 1000);
+        }, 2500);
+      }, 2500);
     }
     sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "type": takerType, "date": at, "price": price, "amount": volume }] });
   }
