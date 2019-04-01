@@ -1,7 +1,7 @@
 var ts = parseInt(Date.now() / 1000);
 
 module.exports = {
-    "btczar": {
+    "btcusd": {
         "at": ts,
         "ticker": {
             "buy": "1200.0",
@@ -100,7 +100,7 @@ module.exports = {
             "vol": "20.0"
         }
     },
-    "ethzar": {
+    "ethusd": {
         "at": ts,
         "ticker": {
             "buy": "200.0",
@@ -112,17 +112,6 @@ module.exports = {
         }
     },
     "dashzar": {
-        "at": ts,
-        "ticker": {
-            "buy": "200.0",
-            "sell": "300.0",
-            "low": "150.0",
-            "high": "350.0",
-            "last": "250.0",
-            "vol": "20.0"
-        }
-    },
-    "btczar": {
         "at": ts,
         "ticker": {
             "buy": "200.0",

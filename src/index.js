@@ -12,7 +12,8 @@ const rangerPort = argv.rangerPort || 9011;
 const help = argv.h || argv.help;
 
 const markets = [
-  'BTC/ZAR',
+  'BTC/USD',
+  'ETH/USD',  
   'BCH/ZAR',
   'ETH/BTC',
   'DASH/BTC',

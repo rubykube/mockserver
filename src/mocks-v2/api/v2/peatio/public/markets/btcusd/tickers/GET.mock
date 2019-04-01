@@ -1,0 +1,9 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
+
+
+{"at":1543958863,"ticker":{"buy":"136559","sell":"136559","low":"136559","high":"136559","last":"146559","vol":"146559"}}
