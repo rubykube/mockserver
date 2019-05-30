@@ -1,0 +1,34 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
+Access-Control-Expose-Headers: total
+Total: 28
+
+[
+    {
+        "uid": "WID4567890AD",
+        "email": "admin@admin.fr",
+        "date": "18-06-20 17:38:42",
+        "amount": "2000",
+        "currency": "USD",
+        "status": "Pending"
+    },
+    {
+        "uid": "WID4567890AD",
+        "email": "admin@admin.fr",
+        "date": "18-06-20 17:38:42",
+        "amount": "2000",
+        "currency": "USD",
+        "status": "Canceled"
+    },
+    {
+        "uid": "WID4567890AD",
+        "email": "admin@admin.fr",
+        "date": "18-06-20 17:38:42",
+        "amount": "2000",
+        "currency": "USD",
+        "status": "Agreed"
+    }
+]

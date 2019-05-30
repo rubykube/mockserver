@@ -100,7 +100,7 @@ const matchedTradesMock = (ws, marketId) => {
         }, 1000);
       }, 1000);
     }
-    sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "type": takerType, "date": at, "price": price, "amount": volume }] });
+    sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "taker_type": takerType, "date": at, "price": price, "amount": volume }] });
   }
 };
 

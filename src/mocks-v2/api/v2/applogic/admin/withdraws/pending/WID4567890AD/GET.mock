@@ -1,0 +1,28 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
+
+
+{
+    "email": "admin@barong.io",
+    "state": "Pending",
+    "date": "18-06-20 17:38:42",
+    "uid": "WID4567890AD",
+    "amount": 64738,
+    "currency": "usd",
+    "name": "John R Savino",
+    "address": "360 Sutor St. Eastpointe, MI 48021",
+    "country": "usa",
+    "account_number": 9494030184,
+    "rid": 9494030184,
+    "bank_name": "Universal bank",
+    "bank_address": "54/19 Avtozavodska Street, 04114 Kyiv, Ukraine",
+    "bank_country": "Ukraine",
+    "bank_swift_code": 9494030184,
+    "intermediary_bank_name": "JSC 'Deutsche Bank DBU'",
+    "intermediary_bank_address": "20 Schwarzkopf street, 01015 Berlin, Germany",
+    "intermediary_bank_country": "Germany",
+    "intermediary_bank_swift_code": 1141414141414145
+}
