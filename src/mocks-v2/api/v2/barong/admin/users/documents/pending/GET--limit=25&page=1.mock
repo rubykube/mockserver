@@ -17,9 +17,9 @@ Total: 17
         "created_at":"2019-02-25T12:41:14Z",
         "updated_at":"2019-02-25T12:41:14Z",
         "profile": {
-            "address": "Sholudenko 3",
-            "city": "Kiev",
-            "country": "Ukraine",
+            "address": "3 Avenue des Champs Elysees",
+            "city": "Paris",
+            "country": "France",
             "dob": "1999-05-21",
             "first_name": "John",
             "last_name": "Snow",
