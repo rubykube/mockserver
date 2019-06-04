@@ -1,0 +1,37 @@
+ID51704201206HTTP/2 201
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+Access-Control-Expose-Headers: total
+Total: 50
+
+
+{
+    "id":1,
+    "email":"john@sbcglobal.net",
+    "role":"member",
+    "level":2,
+    "otp":false,
+    "state":"active",
+    "created_at":"2019-02-25T12:41:14Z",
+    "updated_at":"2019-02-25T12:41:14Z",
+    "profile": {
+        "address": "3 Avenue des Champs Elysees",
+        "city": "Paris",
+        "country": "France",
+        "dob": "1999-05-21",
+        "first_name": "John",
+        "last_name": "Snow",
+        "postcode": "666666"
+    },
+    "labels": [
+        {
+        "key": "phone",
+        "value": "verify",
+        "scope": "private",
+        "created_at": "2019-05-16T14:01:49Z",
+        "updated_at": "2019-05-16T14:01:49Z"
+        }
+    ],
+    "phones": "+380234823918"
+}

@@ -1,0 +1,69 @@
+HTTP/2 201
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+Access-Control-Expose-Headers: total
+Total: 17
+
+[
+    {
+        "id":1,
+        "uid": "ID4704301206",
+        "email":"john@sbcglobal.net",
+        "role":"member",
+        "level":2,
+        "otp":false,
+        "state":"active",
+        "created_at":"2019-02-25T12:41:14Z",
+        "updated_at":"2019-02-25T12:41:14Z",
+        "profile": {
+            "address": "3 Avenue des Champs Elysees",
+            "city": "Paris",
+            "country": "France",
+            "dob": "1999-05-21",
+            "first_name": "John",
+            "last_name": "Snow",
+            "postcode": "666666"
+        }
+    },
+    {
+       "id":2,
+        "uid": "ID41704201206",
+        "email":"mattie@sbcglobal.net",
+        "role":"member",
+        "level":3,
+        "otp":false,
+        "state":"active",
+        "created_at":"2019-05-25T12:41:14Z",
+        "updated_at":"2019-05-25T12:41:14Z",
+        "profile": {
+            "address": "664 Harrison Street",
+            "city": "Berlin",
+            "country": "Germany",
+            "dob": "1999-05-21",
+            "first_name": "Mattie",
+            "last_name": "Keller",
+            "postcode": "111111"
+        }
+    },
+    {
+        "id":3,
+        "uid": "ID51704201206",
+        "email":"antoinette@sbcglobal.net",
+        "role":"member",
+        "level":1,
+        "otp":false,
+        "state":"active",
+        "created_at":"2019-03-25T12:41:14Z",
+        "updated_at":"2019-03-25T12:41:14Z",
+        "profile": {
+            "address": "4608 Star Trek Drive",
+            "city": "Kiev",
+            "country": "Ukraine",
+            "dob": "1999-05-21",
+            "first_name": "Antoinette",
+            "last_name": "Ferguson",
+            "postcode": "888888"
+        }
+    }
+]
