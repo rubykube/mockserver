@@ -22,7 +22,10 @@ Total: 50
         "dob": "1999-05-21",
         "first_name": "John",
         "last_name": "Snow",
-        "postcode": "666666"
+        "postcode": "666666",
+        "metadata": {
+            "nationality": "albanian"
+        }
     },
     "labels": [
         {

@@ -23,7 +23,10 @@ Total: 50
         "dob": "1999-05-21",
         "first_name": "Antoinette",
         "last_name": "Ferguson",
-        "postcode": "888888"
+        "postcode": "888888",
+        "metadata": {
+            "nationality": "albanian"
+        }
     },
     "labels": [
         {
