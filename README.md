@@ -26,4 +26,7 @@ Use the following credentials to simulate specific scenarios:
 | OTP code is valid                |         otp@peatio.tech  |  123123  |       |  123456  |
 | Login a level 3 admin tower      |  toweradmin@peatio.tech  |  123123  |   3   |          |
 | Login a level 3 superadmin tower |  superadmin@peatio.tech  |  123123  |   3   |          |
-
+| Login a level 3 accountant tower |  accountant@peatio.tech  |  123123  |   3   |          |
+| Login a level 3 compliance tower |  compliance@peatio.tech  |  123123  |   3   |          |
+| Login a level 3 technical tower  |   technical@peatio.tech  |  123123  |   3   |          |
+| Login a level 3 support tower    |     support@peatio.tech  |  123123  |   3   |          |
