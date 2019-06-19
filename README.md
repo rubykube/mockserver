@@ -15,12 +15,15 @@ Use any user and password to login.
 
 Use the following credentials to simulate specific scenarios:
 
-|          Scenario           |       Email       | Password | Level | OTP code |
-|:---------------------------:|:-----------------:|:--------:|:-----:|:--------:|
-| Login a level 3 member      |         *         |     *    |   3   |          |
-| Login a level 1 member      | user1@peatio.tech |  123123  |   1   |          |
-| Login a level 2 member      | user2@peatio.tech |  123123  |   2   |          |
-| Login a level 3 admin       | admin@peatio.tech |  123123  |   3   |          |
-| Error invalid email or pass | wrong@peatio.tech |  123123  |       |          |
-| OTP code is requested       |   otp@peatio.tech |  123123  |       |          |
-| OTP code is valid           |   otp@peatio.tech |  123123  |       |  123456  |
+|            Scenario              |           Email          | Password | Level | OTP code |
+|:--------------------------------:|:------------------------:|:--------:|:-----:|:--------:|
+| Login a level 3 member           |             *            |     *    |   3   |          |
+| Login a level 1 member           |       user1@peatio.tech  |  123123  |   1   |          |
+| Login a level 2 member           |       user2@peatio.tech  |  123123  |   2   |          |
+| Login a level 3 admin            |       admin@peatio.tech  |  123123  |   3   |          |
+| Error invalid email or pass      |       wrong@peatio.tech  |  123123  |       |          |
+| OTP code is requested            |         otp@peatio.tech  |  123123  |       |          |
+| OTP code is valid                |         otp@peatio.tech  |  123123  |       |  123456  |
+| Login a level 3 admin tower      |  toweradmin@peatio.tech  |  123123  |   3   |          |
+| Login a level 3 superadmin tower |  superadmin@peatio.tech  |  123123  |   3   |          |
+
