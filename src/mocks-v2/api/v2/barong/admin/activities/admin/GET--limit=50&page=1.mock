@@ -3,7 +3,7 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
 Access-Control-Expose-Headers: total
-Total: 50
+Total: 60
 
 [
     {
@@ -13,7 +13,8 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "balances",
+        "admin": {
             "email": "admin@barong.io",
             "uid": "ID873B710D88",
             "role": "admin",
@@ -21,6 +22,14 @@ Total: 50
             "otp": false,
             "state": "active"
         },
+        "target": {
+            "email": "john@barong.io",
+            "uid": "ID51704201206",
+            "role": "admin",
+            "level": 3,
+            "otp": false,
+            "state": "active"
+        },
         "created_at": "2019-05-24T11:00:39Z"
     },
     {
@@ -30,7 +39,8 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "login",
+        "admin": {
             "email": "john6@barong.io",
             "uid": "ID873B710D88",
             "role": "admin",
@@ -38,6 +48,14 @@ Total: 50
             "otp": false,
             "state": "active"
         },
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
+            "role": "member",
+            "level": 0,
+            "otp": false,
+            "state": "pending"
+        },
         "created_at": "2019-05-24T11:00:39Z"
     },
     {
@@ -47,7 +65,8 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "balances",
+        "admin": {
             "email": "john5@barong.io",
             "uid": "ID873B710D88",
             "role": "admin",
@@ -55,6 +74,14 @@ Total: 50
             "otp": false,
             "state": "active"
         },
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
+            "role": "member",
+            "level": 0,
+            "otp": false,
+            "state": "pending"
+        },
         "created_at": "2019-05-24T11:00:39Z"
     },
     {
@@ -64,7 +91,8 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "list",
+        "admin": {
             "email": "john4@barong.io",
             "uid": "ID873B710D88",
             "role": "admin",
@@ -72,6 +100,14 @@ Total: 50
             "otp": false,
             "state": "active"
         },
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
+            "role": "member",
+            "level": 0,
+            "otp": false,
+            "state": "pending"
+        },
         "created_at": "2019-05-24T11:00:39Z"
     },
     {
@@ -81,7 +117,8 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "balances",
+        "admin": {
             "email": "john3@barong.io",
             "uid": "ID873B710D88",
             "role": "admin",
@@ -89,6 +126,14 @@ Total: 50
             "otp": false,
             "state": "active"
         },
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
+            "role": "member",
+            "level": 0,
+            "otp": false,
+            "state": "pending"
+        },
         "created_at": "2019-05-24T11:00:39Z"
     },
     {
@@ -98,7 +143,8 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "balances",
+        "admin": {
             "email": "john2@barong.io",
             "uid": "ID873B710D88",
             "role": "admin",
@@ -106,22 +152,13 @@ Total: 50
             "otp": false,
             "state": "active"
         },
-        "created_at": "2019-05-24T11:00:39Z"
-    },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "data": null,
-        "user": {
-            "email": "john1@barong.io",
-            "uid": "ID873B710D12",
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
             "role": "member",
-            "level": 3,
+            "level": 0,
             "otp": false,
-            "state": "active"
+            "state": "pending"
         },
         "created_at": "2019-05-24T11:00:39Z"
     },
@@ -132,13 +169,48 @@ Total: 50
         "action": "login",
         "result": "succeed",
         "data": null,
-        "user": {
+        "topic": "balances",
+        "admin": {
+            "email": "john1@barong.io",
+            "uid": "ID873B710D12",
+            "role": "member",
+            "level": 3,
+            "otp": false,
+            "state": "active"
+        },
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
+            "role": "member",
+            "level": 0,
+            "otp": false,
+            "state": "pending"
+        },
+        "created_at": "2019-05-24T11:00:39Z"
+    },
+    {
+        "user_ip": "172.18.0.7",
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
+        "topic": "session",
+        "action": "login",
+        "result": "succeed",
+        "data": null,
+        "topic": "balances",
+        "admin": {
             "email": "john@barong.io",
             "uid": "ID873B710D12",
             "role": "member",
             "level": 3,
             "otp": false,
             "state": "active"
+        },
+        "target": {
+            "email": "asdasdas123123d@mail.com",
+            "uid": "IDD40BD7AB48",
+            "role": "member",
+            "level": 0,
+            "otp": false,
+            "state": "pending"
         },
         "created_at": "2019-05-24T11:00:39Z"
     }

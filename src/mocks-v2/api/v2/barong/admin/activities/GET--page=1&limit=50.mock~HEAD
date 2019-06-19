@@ -13,7 +13,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "balances",
         "user": {
             "email": "admin@barong.io",
             "uid": "ID873B710D88",
@@ -31,7 +30,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "login",
         "user": {
             "email": "john6@barong.io",
             "uid": "ID873B710D88",
@@ -49,7 +47,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "balances",
         "user": {
             "email": "john5@barong.io",
             "uid": "ID873B710D88",
@@ -67,7 +64,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "list",
         "user": {
             "email": "john4@barong.io",
             "uid": "ID873B710D88",
@@ -85,7 +81,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "balances",
         "user": {
             "email": "john3@barong.io",
             "uid": "ID873B710D88",
@@ -103,7 +98,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "balances",
         "user": {
             "email": "john2@barong.io",
             "uid": "ID873B710D88",
@@ -121,7 +115,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "balances",
         "user": {
             "email": "john1@barong.io",
             "uid": "ID873B710D12",
@@ -139,7 +132,6 @@ Total: 60
         "action": "login",
         "result": "succeed",
         "data": null,
-        "topic": "balances",
         "user": {
             "email": "john@barong.io",
             "uid": "ID873B710D12",
