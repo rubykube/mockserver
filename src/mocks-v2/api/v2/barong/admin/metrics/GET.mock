@@ -1,0 +1,31 @@
+HTTP/2 201
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+Access-Control-Expose-Headers: total
+Total: 50
+
+{
+  "signups": {
+    "2019-06-14": 1,
+    "2019-06-17": 1,
+    "2019-06-18": 1,
+    "2019-06-19": 1
+  },
+  "sucessful_logins": {
+    "2019-06-14": 35,
+    "2019-06-15": 28,
+    "2019-06-16": 2,
+    "2019-06-17": 33,
+    "2019-06-18": 23,
+    "2019-06-19": 42
+  },
+  "failed_logins": {
+    "2019-06-14": 1,
+    "2019-06-15": 4,
+    "2019-06-17": 2,
+    "2019-06-18": 1
+  },
+  "pending_applications": 0
+}
+

@@ -1,0 +1,54 @@
+HTTP/2 201
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+Access-Control-Expose-Headers: total
+Total: 60
+
+[
+    {
+        "id": 1,
+        "key": "eth-rinkeby",
+        "name": "Test",
+        "client": "geth",
+        "server": "http://geth:8545",
+        "height": 3741720,
+        "step": 6,
+        "explorer_address": "https://rinkeby.etherscan.io/address/#{address}",
+        "explorer_transaction": "https://rinkeby.etherscan.io/tx/#{txid}",
+        "min_confirmations": 6,
+        "status": "disabled",
+        "created_at": "2019-01-22T14:18:02+01:00",
+        "updated_at": "2019-06-18T17:23:39+02:00"
+    },
+    {
+        "id": 2,
+        "key": "eth-mainet",
+        "name": "Ethereum Mainet",
+        "client": "geth",
+        "server": "http://geth:8545",
+        "height": 5000000,
+        "step": 6,
+        "explorer_address": "https://etherscan.io/address/#{address}",
+        "explorer_transaction": "https://etherscan.io/tx/#{txid}",
+        "min_confirmations": 6,
+        "status": "disabled",
+        "created_at": "2019-01-22T14:18:02+01:00",
+        "updated_at": "2019-01-22T14:18:02+01:00"
+    },
+        {
+        "id": 3,
+        "key": "btc-testnet",
+        "name": "Bitcoin Testnet",
+        "client": "bitcoin",
+        "server": "http://geth:8545",
+        "height": 5000000,
+        "step": 6,
+        "explorer_address": "https://etherscan.io/address/#{address}",
+        "explorer_transaction": "https://etherscan.io/tx/#{txid}",
+        "min_confirmations": 6,
+        "status": "active",
+        "created_at": "2019-01-22T14:18:02+01:00",
+        "updated_at": "2019-01-22T14:18:02+01:00"
+    }
+]
