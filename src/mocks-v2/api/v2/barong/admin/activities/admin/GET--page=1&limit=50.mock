@@ -12,7 +12,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "balances",
         "admin": {
             "email": "admin@barong.io",
@@ -38,7 +38,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "login",
         "admin": {
             "email": "john6@barong.io",
@@ -64,7 +64,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "balances",
         "admin": {
             "email": "john5@barong.io",
@@ -90,7 +90,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "list",
         "admin": {
             "email": "john4@barong.io",
@@ -116,7 +116,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "balances",
         "admin": {
             "email": "john3@barong.io",
@@ -142,7 +142,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "balances",
         "admin": {
             "email": "john2@barong.io",
@@ -168,7 +168,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "balances",
         "admin": {
             "email": "john1@barong.io",
@@ -194,7 +194,7 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
+        "data": '{"path":"api/v2/barong/resource/users/me"}',
         "topic": "balances",
         "admin": {
             "email": "john@barong.io",

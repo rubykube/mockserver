@@ -12,7 +12,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "balances",
         "admin": {
             "email": "admin@barong.io",
@@ -31,6 +30,7 @@ Total: 60
             "state": "active"
         },
         "created_at": "2019-05-24T11:00:39Z"
+        "data": "{"path":"api/v2/admin/users"}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -38,7 +38,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "login",
         "admin": {
             "email": "john6@barong.io",
@@ -56,7 +55,8 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/users","uid":"ID873B710D88"}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -64,7 +64,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "balances",
         "admin": {
             "email": "john5@barong.io",
@@ -82,7 +81,8 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/activities","page":"1","limit":"25}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -90,7 +90,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "list",
         "admin": {
             "email": "john4@barong.io",
@@ -108,7 +107,8 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/activities"}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -116,7 +116,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "balances",
         "admin": {
             "email": "john3@barong.io",
@@ -134,7 +133,8 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/activities"}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -142,7 +142,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "balances",
         "admin": {
             "email": "john2@barong.io",
@@ -160,7 +159,8 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/metrics"}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -168,7 +168,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "balances",
         "admin": {
             "email": "john1@barong.io",
@@ -186,7 +185,8 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/activities"}"
     },
     {
         "user_ip": "172.18.0.7",
@@ -194,7 +194,6 @@ Total: 60
         "topic": "session",
         "action": "login",
         "result": "succeed",
-        "data": null,
         "topic": "balances",
         "admin": {
             "email": "john@barong.io",
@@ -212,6 +211,7 @@ Total: 60
             "otp": false,
             "state": "pending"
         },
-        "created_at": "2019-05-24T11:00:39Z"
+        "created_at": "2019-05-24T11:00:39Z",
+        "data": "{"path":"api/v2/admin/activities"}"
     }
 ]
