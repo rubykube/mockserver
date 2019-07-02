@@ -6,212 +6,239 @@ Access-Control-Expose-Headers: total
 Total: 60
 
 [
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "balances",
-        "admin": {
-            "email": "admin@barong.io",
-            "uid": "ID873B710D88",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "john@barong.io",
-            "uid": "ID51704201206",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "created_at": "2019-05-24T11:00:39Z"
-        "data": "{"path":"api/v2/admin/users"}"
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "login",
-        "admin": {
-            "email": "john6@barong.io",
-            "uid": "ID873B710D88",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/users","uid":"ID873B710D88"}"
+    "target": null,
+    "created_at": "2019-07-02T11:09:39Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"limit\":\"25\",\"page\":\"1\",\"state\":\"wait\",\"path\":\"api/v2/peatio/market/orders\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "balances",
-        "admin": {
-            "email": "john5@barong.io",
-            "uid": "ID873B710D88",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/activities","page":"1","limit":"25}"
+    "target": null,
+    "created_at": "2019-07-02T11:09:38Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"page\":\"1\",\"currency\":\"btc\",\"limit\":\"6\",\"path\":\"api/v2/peatio/account/deposits\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "list",
-        "admin": {
-            "email": "john4@barong.io",
-            "uid": "ID873B710D88",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/activities"}"
+    "target": null,
+    "created_at": "2019-07-02T11:09:36Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "balances",
-        "admin": {
-            "email": "john3@barong.io",
-            "uid": "ID873B710D88",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/activities"}"
+    "target": null,
+    "created_at": "2019-07-02T11:09:36Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/deposit_address/btc\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "balances",
-        "admin": {
-            "email": "john2@barong.io",
-            "uid": "ID873B710D88",
-            "role": "admin",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/metrics"}"
+    "target": null,
+    "created_at": "2019-07-02T11:09:33Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "balances",
-        "admin": {
-            "email": "john1@barong.io",
-            "uid": "ID873B710D12",
-            "role": "member",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/activities"}"
+    "target": null,
+    "created_at": "2019-07-02T11:09:33Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
     },
-    {
-        "user_ip": "172.18.0.7",
-        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
-        "topic": "session",
-        "action": "login",
-        "result": "succeed",
-        "topic": "balances",
-        "admin": {
-            "email": "john@barong.io",
-            "uid": "ID873B710D12",
-            "role": "member",
-            "level": 3,
-            "otp": false,
-            "state": "active"
-        },
-        "target": {
-            "email": "asdasdas123123d@mail.com",
-            "uid": "IDD40BD7AB48",
-            "role": "member",
-            "level": 0,
-            "otp": false,
-            "state": "pending"
-        },
-        "created_at": "2019-05-24T11:00:39Z",
-        "data": "{"path":"api/v2/admin/activities"}"
-    }
+    "target": null,
+    "created_at": "2019-07-02T11:09:30Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
+    },
+    "target": null,
+    "created_at": "2019-07-02T11:09:27Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"page\":\"1\",\"currency\":\"btc\",\"limit\":\"6\",\"path\":\"api/v2/peatio/account/deposits\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
+    },
+    "target": null,
+    "created_at": "2019-07-02T11:09:26Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
+    },
+    "target": null,
+    "created_at": "2019-07-02T11:09:24Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/deposit_address/btc\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
+    },
+    "target": null,
+    "created_at": "2019-07-02T11:09:23Z"
+  },
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"page\":\"1\",\"currency\":\"btc\",\"limit\":\"6\",\"path\":\"api/v2/peatio/account/deposits\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
+    },
+    "target": null,
+    "created_at": "2019-07-02T11:09:23Z"
+  },
+
+  {
+    "user_ip": "195.214.197.210,172.24.0.29",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
+    "topic": "general",
+    "action": "read",
+    "result": "succeed",
+    "data": "{\"path\":\"api/v2/peatio/account/balances\"}",
+    "admin": {
+      "email": "TestMeHelios+PhillipaRuais@gmail.com",
+      "uid": "ID7D4845967D",
+      "role": "admin",
+      "level": 3,
+      "otp": false,
+      "state": "active"
+    },
+    "target": null,
+    "created_at": "2019-07-02T10:55:15Z"
+  }
 ]
