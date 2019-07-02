@@ -6,16 +6,16 @@ access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Au
 
 [
   {
-    "id": "btczar",
-    "name": "BTC/ZAR"
+    "id": "btcusd",
+    "name": "BTC/USD"
   },
   {
     "id": "bchbtc",
-    "name": "BCH/ZAR"
+    "name": "BCH/USD"
   },
   {
     "id": "ethbtc",
-    "name": "ETH/ZAR"
+    "name": "ETH/USD"
   },
   {
     "id": "dashbtc",

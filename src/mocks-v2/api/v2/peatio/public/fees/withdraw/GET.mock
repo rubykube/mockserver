@@ -55,7 +55,7 @@ Access-Control-Allow-Credentials: true
     }
   },
   {
-    "currency": "zar",
+    "currency": "usd",
     "type": "fiat",
     "fee": {
       "type": "fixed",

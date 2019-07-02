@@ -8,10 +8,10 @@ Access-Control-Allow-Credentials: true
 
 [
   {
-    "id": "btczar",
-    "name": "BTC/ZAR",
+    "id": "btcusd",
+    "name": "BTC/USD",
     "ask_unit": "btc",
-    "bid_unit": "zar",
+    "bid_unit": "usd",
     "ask_fee": "0.0015",
     "bid_fee": "0.0015",
     "min_ask_price": "0.0",
@@ -22,10 +22,10 @@ Access-Control-Allow-Credentials: true
     "bid_precision": 4
   },
   {
-    "id": "bchzar",
-    "name": "BCH/ZAR",
+    "id": "bchusd",
+    "name": "BCH/USD",
     "ask_unit": "bch",
-    "bid_unit": "zar",
+    "bid_unit": "usd",
     "ask_fee": "0.0015",
     "bid_fee": "0.0015",
     "min_ask_price": "0.0",

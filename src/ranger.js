@@ -21,10 +21,12 @@ const sendEvent = (ws, routingKey, event) => {
   } catch (error) {
     console.log(`failed to send ranger message: ${error}`);
   }
-}
+};
 
 const tickersMock = (ws, markets) => () => {
-  sendEvent(ws, "global.tickers", Helpers.getTickers(markets));
+  const prevPrice = kLine(parseInt(Date.now() / 1000), 15)[1];
+  const price = kLine(parseInt(Date.now() / 1000), 15)[4];
+  sendEvent(ws, "global.tickers", Helpers.getTickers(markets, prevPrice, price));
 };
 
 /*
@@ -46,8 +48,8 @@ const orderBookUpdateMock = (ws, marketId) => () => {
 */
 
 // Those functions are the same used in k-line mocked API
-const minDay = 6;
-const maxDay = 10;
+const minDay = 3865;
+const maxDay = 5000;
 const fakePeriod = 86400;
 
 const timeToPrice = (time) => {
@@ -55,7 +57,7 @@ const timeToPrice = (time) => {
 };
 
 const timeToVolume = (time, periodInSeconds) => {
-  return maxDay * 10 / 2 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI));
+  return maxDay * 100 / 2 * (1 + Math.cos((time / fakePeriod) * 2 * Math.PI));
 };
 
 const kLine = (time, period) => {
@@ -68,24 +70,25 @@ const kLine = (time, period) => {
   const low = Math.min(open, close) - delta;
   const volume = timeToVolume(time, periodInSeconds);
   return [roundedTime, open, high, low, close, volume].map(String);
-}
+};
 
 let tradeIndex = 100000;
 let orderIndex = 100;
 
 const matchedTradesMock = (ws, marketId) => {
   let kind = "bid";
-  let price = 0.0001;
+  const periodInSeconds = parseInt(15 * 60);
+  let price = timeToPrice(parseInt(Date.now() / 1000) + periodInSeconds);
   let volume = 0.0001;
   return function () {
     const orderId = orderIndex++;
     const tradeId = tradeIndex++;
-    kind = kind == "bid" ? "ask" : "bid";
+    kind = kind === "bid" ? "ask" : "bid";
     const takerType = Math.random() < 0.5 ? "buy" : "sell";
     price += 0.0001;
     volume += 0.00005;
-    let bidId = kind == "bid" ? orderId : orderId - 10;
-    let askId = kind == "ask" ? orderId : orderId - 10;
+    let bidId = kind === "bid" ? orderId : orderId - 10;
+    let askId = kind === "ask" ? orderId : orderId - 10;
     let at = parseInt(Date.now() / 1000);
     if (ws.authenticated) {
       sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "wait", "remaining_volume": volume, "origin_volume": volume });
@@ -97,8 +100,8 @@ const matchedTradesMock = (ws, marketId) => {
         setTimeout(() => {
           sendEvent(ws, "order", { "id": orderId, "at": at, "market": marketId, "kind": kind, "price": price, "state": "done", "remaining_volume": "0.0", "origin_volume": volume });
           sendEvent(ws, "trade", { "id": tradeId, "kind": kind, "at": at, "price": price, "volume": volume, "ask_id": askId, "bid_id": bidId, "market": marketId });
-        }, 1000);
-      }, 1000);
+        }, 2500);
+      }, 2500);
     }
     sendEvent(ws, `${marketId}.trades`, { "trades": [{ "tid": tradeId, "taker_type": takerType, "date": at, "price": price, "amount": volume }] });
   }
@@ -124,7 +127,7 @@ class RangerMock {
   constructor(port, markets) {
     this.markets = markets;
     const wss = new WebSocket.Server({ port: port });
-    const url = `ws://0.0.0.0:${port}`.green
+    const url = `ws://0.0.0.0:${port}`.green;
     console.log(`Ranger: listening on ${url}`);
     const ranger = this;
     wss.on('connection', function connection(ws, request) {
@@ -145,7 +148,7 @@ class RangerMock {
     this.markets.forEach((name) => {
       let { baseUnit, quoteUnit, marketId } = Helpers.getMarketInfos(name);
       ws.timers.push(setInterval(orderBookUpdateMock(ws, marketId), 3000));
-      ws.timers.push(setInterval(matchedTradesMock(ws, marketId), 1000))
+      ws.timers.push(setInterval(matchedTradesMock(ws, marketId), 1000));
       ws.timers.push(setInterval(klinesMock(ws, marketId), 2500))
     });
   }

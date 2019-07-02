@@ -12,12 +12,12 @@ const rangerPort = argv.rangerPort || 9011;
 const help = argv.h || argv.help;
 
 const markets = [
-  'BTC/ZAR',
-  'BCH/ZAR',
+  'BTC/USD',
+  'BCH/USD',
   'ETH/BTC',
   'DASH/BTC',
   'EUR/USD',
-]
+];
 
 const startMock = (port, version) => {
   const log = (message) => console.log(`Mock ${version}: ${message}`.trim());
@@ -29,7 +29,7 @@ const startMock = (port, version) => {
     process.exit();
   });
   return mock;
-}
+};
 
 if (help) {
   console.log([
@@ -43,8 +43,8 @@ if (help) {
     "  --ranger-port=PORT   - Port for Ranger mock to listen on",
   ].join("\n"));
 } else {
-  const mockV1 = startMock(apiV1Port, "v1")
-  const mockV2 = startMock(apiV2Port, "v2")
+  const mockV1 = startMock(apiV1Port, "v1");
+  const mockV2 = startMock(apiV2Port, "v2");
   new SlangerMock(slangerPort, markets);
   new RangerMock(rangerPort, markets);
 
