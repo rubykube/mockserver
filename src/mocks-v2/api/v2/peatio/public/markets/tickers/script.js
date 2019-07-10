@@ -9,7 +9,9 @@ module.exports = {
             "low": "1150.0",
             "high": "1350.0",
             "last": "1250.0",
-            "vol": "120.0"
+            "vol": "120.0",
+            "open": 1251.0,
+            "price_change_percent": "+0.08%"
         }
     },
     "bchbtc": {
@@ -20,7 +22,9 @@ module.exports = {
             "low": "115.0",
             "high": "135.0",
             "last": "125.0",
-            "vol": "12.0"
+            "vol": "12.0",
+            "open": 123.2,
+            "price_change_percent": "-1.44%"
         }
     },
     "ethbtc": {
@@ -31,7 +35,9 @@ module.exports = {
             "low": "0.238",
             "high": "0.253",
             "last": "0.245",
-            "vol": "200.0"
+            "vol": "200.0",
+            "open": 0.247,
+            "price_change_percent": "+0.81%"
         }
     },
     "dashbtc": {
@@ -42,7 +48,9 @@ module.exports = {
             "low": "1.15",
             "high": "1.35",
             "last": "1.250",
-            "vol": "50.0"
+            "vol": "50.0",
+            "open": 1.250,
+            "price_change_percent": "+0.00%"
         }
     },
     "ltcbtc": {
@@ -53,7 +61,9 @@ module.exports = {
             "low": "99.0",
             "high": "150.0",
             "last": "105.0",
-            "vol": "10.0"
+            "vol": "10.0",
+            "open": 106.0,
+            "price_change_percent": "+0.95%"
         }
     },
     "xrpbtc": {
@@ -64,7 +74,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 250.3,
+            "price_change_percent": "+0.12%"
         }
     },
     "xrpzar": {
@@ -75,7 +87,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 251.2,
+            "price_change_percent": "+0.48%"
         }
     },
     "ltczar": {
@@ -86,7 +100,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 248.0,
+            "price_change_percent": "-0.80%"
         }
     },
     "eurusd": {
@@ -97,7 +113,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 250.1,
+            "price_change_percent": "+0.04%"
         }
     },
     "ethzar": {
@@ -108,7 +126,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 235.4,
+            "price_change_percent": "-5.84%"
         }
     },
     "dashzar": {
@@ -119,7 +139,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 252.0,
+            "price_change_percent": "+0.80%"
         }
     },
     "btczar": {
@@ -130,7 +152,9 @@ module.exports = {
             "low": "150.0",
             "high": "350.0",
             "last": "250.0",
-            "vol": "20.0"
+            "vol": "20.0",
+            "open": 266.1,
+            "price_change_percent": "+6.44%"
         }
     }
 }
