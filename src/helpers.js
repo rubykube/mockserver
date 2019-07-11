@@ -18,10 +18,10 @@ const Helpers = {
             let { baseUnit, quoteUnit, marketId } = Helpers.getMarketInfos(name);
             const change = (10 + Math.random() * 10) * (Math.random() > 0.5 ? 1 : -1);
             const coeffChange = 1 + parseFloat(change / 1000);
-            const signPrefix = change >= 0 ? '+' : '';
             const open = 0.134 * coeffChange;
             const last = 0.134 / coeffChange;
-            const price_change_percent = (open - last) / last * 100;
+            const price_change_percent = (last - open) / last * 100;
+            const signPrefix = price_change_percent >= 0 ? '+' : '-';
 
             tickers[marketId] = {
                 "name": name,
@@ -35,7 +35,7 @@ const Helpers = {
                 "sell": "0.0",
                 "buy": "0.0",
                 "avg_price": "0.0",
-                "price_change_percent": `${signPrefix}${price_change_percent.toFixed(2)}%`,
+                "price_change_percent": `${signPrefix}${Math.abs(price_change_percent.toFixed(2))}%`,
                 "at": Date.now() / 1000,
             }
         });
