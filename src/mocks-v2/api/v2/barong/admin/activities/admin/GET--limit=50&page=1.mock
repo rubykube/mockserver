@@ -12,7 +12,7 @@ Total: 60
     "topic": "activities",
     "action": "read",
     "result": "succeed",
-    "data": "{\"page\":\"1\",\"limit\":\"50\",\"path\":\"api/v2/barong/admin/activities/admin\"}",
+    "data": "{\"page\":\"1\",\"wallet\":{\"id\":\"7\",\"blockchain_key\":\"eth\",\"currency_id\":\"7\"},\"path\":\"api/v2/barong/admin/activities\"}",
     "admin": {
       "email": "superadmin@barong.io",
       "uid": "IDABE33F71F5",
@@ -30,7 +30,7 @@ Total: 60
     "topic": "activities",
     "action": "read",
     "result": "succeed",
-    "data": "{\"page\":\"1\",\"limit\":\"50\",\"path\":\"api/v2/barong/admin/activities\"}",
+    "data": "{\"path\":\"api/v2/barong/admin/metrics\",\"created_at\":\"1563224400\"}",
     "admin": {
       "email": "superadmin@barong.io",
       "uid": "IDABE33F71F5",
@@ -48,7 +48,7 @@ Total: 60
     "topic": "activities",
     "action": "read",
     "result": "succeed",
-    "data": "{\"page\":\"1\",\"limit\":\"50\",\"path\":\"api/v2/barong/admin/activities/admin\"}",
+    "data": null,
     "admin": {
       "email": "superadmin@barong.io",
       "uid": "IDABE33F71F5",
