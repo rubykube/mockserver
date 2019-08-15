@@ -1,0 +1,57 @@
+HTTP/2 200
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+Access-Control-Expose-Headers: total
+Total: 60
+
+[
+    {
+        "id": "kynusd",
+        "name": "KYN/USD",
+        "base_unit": "kyn",
+        "quote_unit": "usd",
+        "ask_fee": 0.0015,
+        "bid_fee": 0.0015,
+        "min_price": 186.342,
+        "max_price": 231.122,
+        "min_amount": 0.0,
+        "amount_precision": 0.0,
+        "price_precision": 0.0,
+        "state": "disabled",
+        "created_at": "2019-01-22T14:18:02+01:00",
+        "updated_at": "2019-06-18T17:23:39+02:00"
+    },
+    {
+        "id": "dashbch",
+        "name": "DASH/BCH",
+        "base_unit": "dash",
+        "quote_unit": "bch",
+        "ask_fee": 0.0015,
+        "bid_fee": 0.0015,
+        "min_price": 186.342,
+        "max_price": 231.122,
+        "min_amount": 0.0,
+        "amount_precision": 0.0,
+        "price_precision": 0.0,
+        "state": "enabled",
+        "created_at": "2019-01-22T14:18:02+01:00",
+        "updated_at": "2019-06-18T17:23:39+02:00"
+    },
+    {
+        "id": "ksyseth",
+        "name": "KSYS/ETH",
+        "base_unit": "ksys",
+        "quote_unit": "eth",
+        "ask_fee": 0.0015,
+        "bid_fee": 0.0015,
+        "min_price": 186.342,
+        "max_price": 231.122,
+        "min_amount": 0.0,
+        "amount_precision": 0.0,
+        "price_precision": 0.0,
+        "state": "hidden",
+        "created_at": "2019-01-22T14:18:02+01:00",
+        "updated_at": "2019-06-18T17:23:39+02:00"
+    }
+]
