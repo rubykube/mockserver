@@ -1,4 +1,4 @@
-HTTP/2 201
+HTTP/2 200
 access-control-allow-origin: *
 access-control-allow-methods: GET, POST, PUT, PATCH, DELETE
 access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
@@ -13,7 +13,6 @@ Total: 60
         "client": "geth",
         "server": "http://geth:8545",
         "height": 3741720,
-        "step": 6,
         "explorer_address": "https://rinkeby.etherscan.io/address/#{address}",
         "explorer_transaction": "https://rinkeby.etherscan.io/tx/#{txid}",
         "min_confirmations": 6,
@@ -28,7 +27,6 @@ Total: 60
         "client": "geth",
         "server": "http://geth:8545",
         "height": 5000000,
-        "step": 6,
         "explorer_address": "https://etherscan.io/address/#{address}",
         "explorer_transaction": "https://etherscan.io/tx/#{txid}",
         "min_confirmations": 6,
@@ -43,7 +41,6 @@ Total: 60
         "client": "bitcoin",
         "server": "http://geth:8545",
         "height": 5000000,
-        "step": 6,
         "explorer_address": "https://etherscan.io/address/#{address}",
         "explorer_transaction": "https://etherscan.io/tx/#{txid}",
         "min_confirmations": 6,
