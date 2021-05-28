@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "mockserver": "^2.2.0",
-    "ws": "^6.1.2"
+    "ws": "^7.4.5"
   }
 }
